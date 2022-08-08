@@ -2,12 +2,12 @@
   "name": "portfolio",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/index.js",
+  "main": "build/index.js",
   "scripts": {
     "start": "tsc -w --preserveWatchOutput",
-    "server": "nodemon dist/index.js",
+    "server": "nodemon build/index.js",
     "client": "npm run start --prefix client",
-    "dev": "concurrently \"npm run start\" \"npm run client\" \"npm run server\"",
+    "dev": "concurrently \"npm run start\" \"npm run server\" \"npm run client\"",
     "prepublishOnly": "tsc",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
