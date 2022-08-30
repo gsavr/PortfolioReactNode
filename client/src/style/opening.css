@@ -1,0 +1,22 @@
+.off-left {
+  transform: translateX(-3000px);
+}
+.opening-left {
+  transform: translateX(0px);
+}
+
+.off-right {
+  transform: translateX(3000px);
+}
+
+.opening-right {
+  transform: translateX(0px);
+}
+
+.closed-space {
+  opacity: 0;
+}
+
+.opening-space {
+  opacity: 1;
+}
