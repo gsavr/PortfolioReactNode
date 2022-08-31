@@ -26,10 +26,12 @@ export const NavBar: React.FC = () => {
 
   //map out links form links var
   const renderLinks = () => {
-    return links.map(({ link, label }) => {
+    return links.map(({ link, label, target, rel }) => {
       return (
         <div className="group" key={label}>
-          <a href={link}>{label}</a>
+          <a href={link} target={target} rel={rel}>
+            {label}
+          </a>
           <div className="mx-2 transition duration-300 group-hover:border-b group-hover:border-pink-500"></div>
         </div>
       );

@@ -3,9 +3,17 @@
 }
 
 .item {
-  @apply relative overflow-hidden shadow-xl md:w-1/4;
+  @apply relative overflow-hidden shadow-2xl md:w-1/4;
 }
 
 .item-gradient {
   @apply absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-b from-transparent to-gray-900 group-hover:from-gray-50 group-hover:to-white group-hover:opacity-70;
+}
+
+.project-image-text {
+  @apply absolute bottom-4 max-w-full px-4 duration-200 group-hover:scale-110 group-hover:text-black lg:bottom-8 lg:px-10;
+}
+
+.project-image-description {
+  @apply block text-sm transition-all duration-100 group-hover:opacity-100 md:hidden md:opacity-0 md:group-hover:block;
 }

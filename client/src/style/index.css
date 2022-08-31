@@ -28,3 +28,10 @@ html {
 @import "./hamburger-button.css";
 @import "./mobile-menu.css";
 @import "./projects.css";
+@import "./contact.css";
+
+@layer base {
+  h1 {
+    @apply mt-10 mb-0 pb-10 text-center text-4xl uppercase transition-all duration-700 md:pt-14 md:text-6xl;
+  }
+}

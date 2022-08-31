@@ -22,11 +22,13 @@ export const MobileMenu: React.FC<MobileMenuProps> = (props) => {
 
   //map out links form links var
   const renderLinks = () => {
-    return links.map(({ link, label }) => {
+    return links.map(({ link, label, target, rel }) => {
       return (
         <a
           href={link}
           key={label}
+          target={target}
+          rel={rel}
           onClick={openMobileMenu}
           className={`hover:text-pink-500 ${opening} transition-all duration-200`}
         >

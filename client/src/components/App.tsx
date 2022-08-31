@@ -31,7 +31,7 @@ export const App: React.FC = () => {
         openFromRight={openFromRight}
         openingSpace={openingSpace}
       />
-      <Contact />
+      <Contact openingSpace={openingSpace} />
     </div>
   );
 };

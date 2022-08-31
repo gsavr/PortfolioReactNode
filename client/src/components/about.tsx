@@ -13,18 +13,14 @@ export const About: React.FC<AboutProps> = (props) => {
   return (
     <div id="about" className="overflow-x-hidden">
       {/*  About Me Container  */}
-      <h1
-        className={`mt-10 mb-0 pb-10 text-center text-4xl uppercase md:text-6xl ${openingSpace} transition-all duration-700 md:pt-14`}
-      >
-        About me
-      </h1>
+      <h1 className={`${openingSpace}`}>About me</h1>
       <div className="container mx-auto flex flex-col items-center px-6 pb-6 md:flex-row md:space-x-16">
         {/*  Image  */}
         <div
           className={`md:w-1/4 ${openFromLeft} w-2/3 rounded-full transition-all duration-1000`}
         >
           <img
-            className="mb-10 rounded-full shadow-2xl md:w-fit"
+            className="mb-10 rounded-full shadow-2xl transition-all duration-1000 md:w-fit"
             src={photo}
             alt="Giorgio"
           />

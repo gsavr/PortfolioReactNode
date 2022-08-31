@@ -16,7 +16,7 @@ export const Skills = () => {
     <div className="flex flex-col items-center space-y-4 text-secondary">
       {/* 6 in a row down to md screen // 3 per row on mobile */}
       <div className="flex flex-col space-y-4 md:flex-row md:space-x-12 md:space-y-0 lg:space-x-24">
-        {/*1st 3 itmes */}
+        {/* 1st 3 itmes */}
         <div className="flex space-x-10 md:space-x-12 lg:space-x-24 ">
           <div className="flex w-1/3 flex-col items-center">
             <img

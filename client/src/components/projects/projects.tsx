@@ -38,11 +38,9 @@ export const Projects: React.FC<ProjectsProps> = (props) => {
           {/*  Image gradient  */}
           <div className="item-gradient"></div>
           {/*  Image text  */}
-          <div className="absolute bottom-4 max-w-full px-4 duration-200 group-hover:scale-110 group-hover:text-black lg:bottom-8 lg:px-10">
+          <div className="project-image-text ">
             <h5 className="uppercase">{title}</h5>
-            <p className="block text-sm transition-all duration-100 group-hover:opacity-100 md:hidden md:opacity-0 md:group-hover:block">
-              {desc}
-            </p>
+            <p className="project-image-description ">{desc}</p>
           </div>
         </a>
       );
@@ -50,15 +48,11 @@ export const Projects: React.FC<ProjectsProps> = (props) => {
   };
 
   return (
-    <div id="projects">
+    <div id="projects" className="overflow-x-hidden">
       <div className="container mx-auto mt-10 mb-0 max-w-6xl px-6 pb-10 md:px-8">
         {/*  Projects header  */}
         <div className="mb-20 flex justify-center">
-          <h1
-            className={`text-center text-4xl uppercase md:text-6xl ${openingSpace} transition-all duration-700`}
-          >
-            projects
-          </h1>
+          <h1 className={`${openingSpace}`}>projects</h1>
         </div>
 
         {/*  Items Container row 1  */}
