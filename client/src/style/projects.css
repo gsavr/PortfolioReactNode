@@ -1,9 +1,9 @@
 .item-container {
-  @apply flex w-full flex-col justify-between space-y-6 text-2xl text-white md:flex-row md:space-y-0 md:space-x-8;
+  @apply flex w-full flex-col justify-between space-y-6 text-xl text-white md:flex-row md:space-y-0 md:space-x-8 lg:text-2xl;
 }
 
 .item {
-  @apply relative overflow-hidden md:w-1/4;
+  @apply relative overflow-hidden shadow-xl md:w-1/4;
 }
 
 .item-gradient {

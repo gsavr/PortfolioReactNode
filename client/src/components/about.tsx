@@ -57,7 +57,7 @@ export const About: React.FC<AboutProps> = (props) => {
 
       {/* Skills  */}
       <div
-        className={`container mx-auto flex flex-col items-center px-6 pb-32  ${openFromLeft} transition-all duration-1500`}
+        className={`container mx-auto flex flex-col items-center px-6 pb-20  ${openFromLeft} transition-all duration-1500`}
       >
         <div className="flex flex-col space-y-5">
           <h2 className="max-w-md text-xl font-bold uppercase md:text-4xl">

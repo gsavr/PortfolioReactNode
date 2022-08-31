@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { About } from "./about";
 import { Contact } from "./contact";
 import { Hero } from "./hero/hero";
-import { Projects } from "./projects";
+import { Projects } from "./projects/projects";
 
 export const App: React.FC = () => {
   //for transition effect
@@ -26,8 +26,12 @@ export const App: React.FC = () => {
         openFromRight={openFromRight}
         openingSpace={openingSpace}
       />
-      {/* <Projects />
-      <Contact /> */}
+      <Projects
+        openFromLeft={openFromLeft}
+        openFromRight={openFromRight}
+        openingSpace={openingSpace}
+      />
+      <Contact />
     </div>
   );
 };
