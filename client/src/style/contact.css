@@ -1,3 +1,7 @@
 .input {
-  @apply w-full border border-slate-300  py-3 px-[14px] text-base text-slate-900 outline-none placeholder:text-slate-600 focus:border-slate-300 focus-visible:shadow-none dark:bg-slate-100;
+  @apply w-full border  border-slate-300 py-3 px-[14px] text-base text-slate-900 shadow-sm outline-none placeholder:text-slate-600 focus:border-slate-300 focus-visible:shadow-none dark:bg-slate-100;
+}
+
+.form-button {
+  @apply w-full border p-3 uppercase text-white transition duration-300 hover:bg-[#8bd8bd] hover:bg-opacity-90 hover:text-slate-800 dark:border-[#5d7b70] dark:bg-[#8bd8bd] dark:text-slate-800 dark:hover:bg-[#243665] dark:hover:text-slate-50;
 }

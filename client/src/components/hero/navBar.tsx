@@ -32,7 +32,7 @@ export const NavBar: React.FC = () => {
           <a href={link} target={target} rel={rel}>
             {label}
           </a>
-          <div className="mx-2 transition duration-300 group-hover:border-b group-hover:border-pink-500"></div>
+          <div className="mx-2 transition duration-300 group-hover:border-b group-hover:border-[#8bd8bd]"></div>
         </div>
       );
     });

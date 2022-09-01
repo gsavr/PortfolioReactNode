@@ -1,77 +1,115 @@
+import circleG from "../images/circle-g.svg";
+import circleB from "../images/circle-b.svg";
+import { useState } from "react";
+import axios from "axios";
+
 interface ContactProps {
   openingSpace: string;
 }
 
 export const Contact: React.FC<ContactProps> = (props) => {
   const { openingSpace } = props;
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const data = {
+      name: name,
+      email: email,
+      phone: phone,
+      message: message,
+    };
+    console.log(data);
+    axios
+      .post("api/contact", data)
+      .then((response) => {
+        console.log("Status: ", response.status);
+        console.log("Data: ", response.data);
+      })
+      .catch((error) => {
+        console.error("Something went wrong!", error);
+      });
+  };
 
   return (
     <div id="contact">
-      <h1 className={`bg-secondary ${openingSpace}`}>contact me</h1>
+      <h1 className={`bg-secondary ${openingSpace} pt-20 pb-0 lg:pb-14`}>
+        contact me
+      </h1>
 
-      <div className="relative z-10 overflow-hidden  bg-secondary py-20 lg:py-[120px]">
+      <div className="relative z-10 overflow-x-hidden bg-secondary pt-0 pb-20 md:pt-10 lg:py-12">
         <div className="container mx-auto mt-10 mb-0 max-w-6xl px-6 pb-10 md:px-8">
           <div className="-mx-4 flex flex-wrap lg:justify-between">
             <div className="w-full px-4 lg:w-4/12 ">
               <div className="mb-12 max-w-[570px] lg:mb-0">
-                <h2 className="mb-6 text-[32px] font-bold uppercase text-primary sm:text-[40px] lg:text-[36px] xl:text-[40px]">
+                <h2 className="mb-6 text-[28px] font-bold uppercase text-primary sm:text-[40px] lg:text-[36px] xl:text-[40px]">
                   LET'S GET IN TOUCH
                 </h2>
-                <p className="mb-9 text-2xl uppercase leading-relaxed text-secondary">
-                  Have a question? <p>Want to work with me?</p>{" "}
+                <div className="mb-9 text-2xl uppercase leading-relaxed text-secondary">
+                  <p> Have a question?</p> <p>Want to work with me?</p>{" "}
                   <p>Write me a note!</p>
-                </p>
+                </div>
               </div>
             </div>
             <div className="w-full px-4 lg:w-8/12">
               <div className="relative bg-primary p-8 shadow-2xl sm:p-12">
-                <form>
+                <form
+                  onSubmit={(e: React.FormEvent<HTMLFormElement>) =>
+                    handleSubmit(e)
+                  }
+                >
                   <div className="mb-6">
                     <input
                       type="text"
                       placeholder="name"
+                      value={name}
+                      onChange={(e) => setName(e.target.value)}
                       required
                       className="input"
                     />
                   </div>
                   <div className="mb-6">
-                    <input type="email" placeholder="email" className="input" />
+                    <input
+                      type="email"
+                      placeholder="email"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                      className="input"
+                      required
+                    />
                   </div>
                   <div className="mb-6">
-                    <input type="text" placeholder="phone" className="input" />
+                    <input
+                      type="text"
+                      placeholder="phone"
+                      value={phone}
+                      onChange={(e) => setPhone(e.target.value)}
+                      className="input"
+                    />
                   </div>
                   <div className="mb-6">
                     <textarea
                       /* rows="6" */
                       placeholder="message"
+                      value={message}
+                      onChange={(e) => setMessage(e.target.value)}
                       className="input resize-none"
+                      required
                     ></textarea>
                   </div>
                   <div>
-                    <button
-                      type="submit"
-                      className="border-primary w-full border bg-slate-600 p-3 uppercase text-white transition hover:bg-opacity-90"
-                    >
+                    <button type="submit" className="form-button bg-[#243665]">
                       Message Me
                     </button>
                   </div>
                 </form>
                 <div>
                   <span className="absolute -top-10 -right-9 z-[-1]">
-                    <svg
-                      width="100"
-                      height="100"
-                      viewBox="0 0 100 100"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M0 100C0 44.7715 0 0 0 0C55.2285 0 100 44.7715 100 100C100 100 100 100 0 100Z"
-                        fill="#3056D3"
-                      />
-                    </svg>
+                    <img src={circleG} alt="" className="hidden dark:block" />
+                    <img src={circleB} alt="" className="dark:hidden" />
                   </span>
                 </div>
               </div>

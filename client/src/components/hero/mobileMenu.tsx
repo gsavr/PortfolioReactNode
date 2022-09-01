@@ -30,7 +30,7 @@ export const MobileMenu: React.FC<MobileMenuProps> = (props) => {
           target={target}
           rel={rel}
           onClick={openMobileMenu}
-          className={`hover:text-pink-500 ${opening} transition-all duration-200`}
+          className={`hover:text-[#4fa285] ${opening} transition-all duration-200`}
         >
           {label}
         </a>
@@ -46,7 +46,7 @@ export const MobileMenu: React.FC<MobileMenuProps> = (props) => {
             <a
               href="#home"
               onClick={openMobileMenu}
-              className={`hover:text-pink-500 ${opening} transition-all duration-200`}
+              className={`hover:text-[#4fa285] ${opening} transition-all duration-200`}
             >
               Home
             </a>
