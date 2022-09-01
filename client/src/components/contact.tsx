@@ -1,7 +1,7 @@
 import circleG from "../images/circle-g.svg";
 import circleB from "../images/circle-b.svg";
 import { useState } from "react";
-import { sendEmail } from "../services/sendgrid";
+//import { sendEmail } from "../services/sendgrid";
 import { Modal } from "./modal";
 
 interface ContactProps {
@@ -18,7 +18,7 @@ export const Contact: React.FC<ContactProps> = (props) => {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    sendEmail(name, email, phone, message);
+    //sendEmail(name, email, phone, message);
     setOpen(true);
   };
 
