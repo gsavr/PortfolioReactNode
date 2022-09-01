@@ -1,7 +1,8 @@
 import circleG from "../images/circle-g.svg";
 import circleB from "../images/circle-b.svg";
 import { useState } from "react";
-import axios from "axios";
+import { sendEmail } from "../services/sendgrid";
+import { Modal } from "./modal";
 
 interface ContactProps {
   openingSpace: string;
@@ -13,25 +14,12 @@ export const Contact: React.FC<ContactProps> = (props) => {
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
+  const [open, setOpen] = useState(false);
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const data = {
-      name: name,
-      email: email,
-      phone: phone,
-      message: message,
-    };
-    console.log(data);
-    axios
-      .post("api/contact", data)
-      .then((response) => {
-        console.log("Status: ", response.status);
-        console.log("Data: ", response.data);
-      })
-      .catch((error) => {
-        console.error("Something went wrong!", error);
-      });
+    sendEmail(name, email, phone, message);
+    setOpen(true);
   };
 
   return (
@@ -39,7 +27,7 @@ export const Contact: React.FC<ContactProps> = (props) => {
       <h1 className={`bg-secondary ${openingSpace} pt-20 pb-0 lg:pb-14`}>
         contact me
       </h1>
-
+      <Modal open={open} setOpen={setOpen} />
       <div className="relative z-10 overflow-x-hidden bg-secondary pt-0 pb-20 md:pt-10 lg:py-12">
         <div className="container mx-auto mt-10 mb-0 max-w-6xl px-6 pb-10 md:px-8">
           <div className="-mx-4 flex flex-wrap lg:justify-between">
@@ -55,7 +43,7 @@ export const Contact: React.FC<ContactProps> = (props) => {
               </div>
             </div>
             <div className="w-full px-4 lg:w-8/12">
-              <div className="relative bg-primary p-8 shadow-2xl sm:p-12">
+              <div className="relative bg-primary p-8 shadow-2xl dark:bg-[#3a4453] sm:p-12">
                 <form
                   onSubmit={(e: React.FormEvent<HTMLFormElement>) =>
                     handleSubmit(e)
@@ -84,7 +72,7 @@ export const Contact: React.FC<ContactProps> = (props) => {
                   <div className="mb-6">
                     <input
                       type="text"
-                      placeholder="phone"
+                      placeholder="phone (optional)"
                       value={phone}
                       onChange={(e) => setPhone(e.target.value)}
                       className="input"
@@ -92,7 +80,7 @@ export const Contact: React.FC<ContactProps> = (props) => {
                   </div>
                   <div className="mb-6">
                     <textarea
-                      /* rows="6" */
+                      rows={4}
                       placeholder="message"
                       value={message}
                       onChange={(e) => setMessage(e.target.value)}
