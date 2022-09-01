@@ -100,6 +100,7 @@ export const Contact: React.FC<ContactProps> = (props) => {
                     <img src={circleB} alt="" className="dark:hidden" />
                   </span>
                 </div>
+                {""}
               </div>
             </div>
           </div>
