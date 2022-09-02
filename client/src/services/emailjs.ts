@@ -1,7 +1,7 @@
 import emailjs from "@emailjs/browser";
-const keys = require("../config/keys");
+// const keys = require("../config/keys");
 
-const { serviceId, templateId, emailjsKey } = keys;
+// const { serviceId, templateId, emailjsKey } = keys;
 
 export const sendEmail = async (
   name: string,
@@ -16,12 +16,19 @@ export const sendEmail = async (
     message,
   };
 
-  await emailjs.send(serviceId, templateId, templateParams, emailjsKey).then(
-    function (response) {
-      console.log("SUCCESS!", response.status, response.text);
-    },
-    function (error) {
-      console.log("FAILED...", error);
-    }
-  );
+  await emailjs
+    .send(
+      "service_784y7ve",
+      "template_61aph43",
+      templateParams,
+      "LQV0njcnqS4hUqoWI"
+    )
+    .then(
+      function (response) {
+        console.log("SUCCESS!", response.status, response.text);
+      },
+      function (error) {
+        console.log("FAILED...", error);
+      }
+    );
 };
