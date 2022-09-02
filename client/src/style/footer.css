@@ -1,0 +1,4 @@
+.ficon:hover {
+  filter: brightness(0) saturate(100%) invert(82%) sepia(39%) saturate(291%)
+    hue-rotate(105deg) brightness(90%) contrast(92%);
+}

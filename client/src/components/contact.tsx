@@ -28,9 +28,11 @@ export const Contact: React.FC<ContactProps> = (props) => {
 
   return (
     <div id="contact">
-      <h1 className={`bg-secondary ${openingSpace} pt-20 pb-0 lg:pb-14`}>
-        contact me
-      </h1>
+      <div className={`bg-secondary`}>
+        <h1 className={`bg-secondary ${openingSpace} pt-20 pb-0 lg:pb-14`}>
+          contact me
+        </h1>
+      </div>
       <Modal open={open} setOpen={setOpen} />
       <div className="relative z-10 overflow-x-hidden bg-secondary pt-0 pb-20 md:pt-10 lg:py-12">
         <div className="container mx-auto mt-10 mb-0 max-w-6xl px-6 pb-10 md:px-8">

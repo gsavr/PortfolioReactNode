@@ -42,7 +42,7 @@ export const Modal: React.FC<ModalProps> = (props) => {
               leaveFrom="opacity-100 translate-y-0 sm:scale-100"
               leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
             >
-              <Dialog.Panel className="relative transform overflow-hidden  bg-primary text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
+              <Dialog.Panel className="relative transform overflow-hidden  bg-primary text-left shadow-2xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
                 <div className="bg-primary px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
                   <div className="sm:flex sm:items-start">
                     <div className="mx-auto flex h-20 w-20 flex-shrink-0 items-center justify-center rounded-full bg-primary sm:mx-0 sm:h-10 sm:w-10">
@@ -61,6 +61,9 @@ export const Modal: React.FC<ModalProps> = (props) => {
                       <div className="mt-2">
                         <p className="text-secodary text-sm">
                           I will get back to you as soon as possible.
+                        </p>
+                        <p className="pt-2 text-xs">
+                          Please check your email for confirmation.
                         </p>
                       </div>
                     </div>

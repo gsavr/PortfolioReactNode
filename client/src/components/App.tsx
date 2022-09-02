@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { About } from "./about";
 import { Contact } from "./contact";
+import { Footer } from "./footer";
 import { Hero } from "./hero/hero";
 import { Projects } from "./projects/projects";
 
@@ -32,6 +33,7 @@ export const App: React.FC = () => {
         openingSpace={openingSpace}
       />
       <Contact openingSpace={openingSpace} />
+      <Footer />
     </div>
   );
 };

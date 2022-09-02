@@ -23,12 +23,14 @@ html {
 @tailwind components;
 @tailwind utilities;
 
+@import "./locomotive-scroll";
 @import "./opening.css";
 @import "./hero.css";
 @import "./hamburger-button.css";
 @import "./mobile-menu.css";
 @import "./projects.css";
 @import "./contact.css";
+@import "./footer.css";
 
 @layer base {
   h1 {
