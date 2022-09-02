@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emailjs/browser": "^3.7.0",
     "@headlessui/react": "^1.6.6",
     "@heroicons/react": "^2.0.10",
     "@sendgrid/mail": "^7.7.0",
@@ -14,6 +15,7 @@
     "@types/react": "^18.0.17",
     "@types/react-dom": "^18.0.6",
     "axios": "^0.27.2",
+    "env-cmd": "^10.1.0",
     "fs": "^0.0.1-security",
     "http-proxy-middleware": "^2.0.6",
     "path-browserify": "^1.0.1",
