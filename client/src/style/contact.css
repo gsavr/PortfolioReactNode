@@ -3,5 +3,5 @@
 }
 
 .form-button {
-  @apply w-full border p-3 uppercase text-white transition duration-300 hover:bg-[#8bd8bd] hover:bg-opacity-90 hover:text-slate-800 dark:border-[#5d7b70] dark:bg-[#8bd8bd] dark:text-slate-800 dark:hover:bg-[#243665] dark:hover:text-slate-50;
+  @apply w-full border p-3 uppercase text-white transition duration-300 hover:bg-[#8bd8bd] hover:bg-opacity-90 hover:text-slate-800 dark:border-[#5d7b70] dark:bg-[#8bd8bd] dark:text-slate-800 dark:hover:border-[#243665] dark:hover:bg-[#243665] dark:hover:text-slate-50;
 }

@@ -49,7 +49,7 @@ export const Projects: React.FC<ProjectsProps> = (props) => {
 
   return (
     <div id="projects" className="overflow-x-hidden">
-      <div className="container mx-auto mt-10 mb-0 max-w-6xl px-6 pb-10 md:px-8">
+      <div className="container mx-auto mt-10 mb-32 max-w-6xl px-6 pb-10 md:px-8">
         {/*  Projects header  */}
         <div className="mb-20 flex justify-center">
           <h1 className={`${openingSpace}`}>projects</h1>
