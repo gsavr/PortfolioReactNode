@@ -14,16 +14,21 @@ export const Contact: React.FC<ContactProps> = (props) => {
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
+  const [sending, setSending] = useState(false);
   const [open, setOpen] = useState(false);
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     sendEmail(name, email, phone, message);
-    setOpen(true);
-    setName("");
-    setEmail("");
-    setPhone("");
-    setMessage("");
+    setSending(true);
+    setTimeout(() => {
+      setOpen(true);
+      setSending(false);
+      setName("");
+      setEmail("");
+      setPhone("");
+      setMessage("");
+    }, 1250);
   };
 
   return (
@@ -95,8 +100,13 @@ export const Contact: React.FC<ContactProps> = (props) => {
                     ></textarea>
                   </div>
                   <div>
-                    <button type="submit" className="form-button bg-[#243665]">
-                      Message Me
+                    <button
+                      type="submit"
+                      className={`form-button  ${
+                        sending ? "bg-[#8bd8bd] shadow-2xl" : "bg-[#243665]"
+                      }`}
+                    >
+                      {sending ? "Sending ..." : "Message Me"}
                     </button>
                   </div>
                 </form>
