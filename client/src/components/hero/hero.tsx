@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { NavBar } from "./navBar";
+import { Link } from "react-scroll";
 
 export const Hero: React.FC = () => {
   return (
@@ -26,9 +27,9 @@ export const Hero: React.FC = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ type: "spring", duration: 1.5, bounce: 0.3 }}
           >
-            <a href="#about" className={`hero-enter-button`}>
+            <Link to="about" className={`hero-enter-button`}>
               <p>Enter</p>
-            </a>
+            </Link>
           </motion.div>
         </div>
       </div>
