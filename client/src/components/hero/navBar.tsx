@@ -47,9 +47,17 @@ export const NavBar: React.FC = () => {
       <div className=" hidden h-10 items-center md:flex md:space-x-8">
         {/* All links */}
         {renderLinks()}
-        <a href={resumeLink.link} target="_blank" rel="noreferrer">
-          Resume
-        </a>
+        <div className="group">
+          <a
+            href={resumeLink.link}
+            target="_blank"
+            rel="noreferrer"
+            className="group"
+          >
+            Resume
+          </a>
+          <div className="mx-2 transition duration-300 group-hover:border-b group-hover:border-[#8bd8bd]"></div>
+        </div>
         <div className="group">
           <ToggleTheme />
         </div>

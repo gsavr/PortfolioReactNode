@@ -51,7 +51,12 @@ export const MobileMenu: React.FC<MobileMenuProps> = (props) => {
               Home
             </Link>
             {renderLinks()}
-            <a href={resumeLink.link} target="_blank" rel="noreferrer">
+            <a
+              href={resumeLink.link}
+              target="_blank"
+              rel="noreferrer"
+              className={`hover:text-[#4fa285] ${opening} cursor-pointer transition-all duration-200`}
+            >
               Resume
             </a>
           </>
