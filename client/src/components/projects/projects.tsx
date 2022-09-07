@@ -1,14 +1,13 @@
 import { projects1, projects2 } from "./project-list";
+import { motion } from "framer-motion";
+import {
+  animateH1,
+  animatePic,
+  animatefromLeft,
+  animatefromRight,
+} from "../animation";
 
-interface ProjectsProps {
-  openFromLeft: string;
-  openFromRight: string;
-  openingSpace: string;
-}
-
-export const Projects: React.FC<ProjectsProps> = (props) => {
-  const { openFromLeft, openFromRight, openingSpace } = props;
-
+export const Projects: React.FC = () => {
   const renderProjectRow = (
     list: {
       link: string;
@@ -49,24 +48,39 @@ export const Projects: React.FC<ProjectsProps> = (props) => {
 
   return (
     <div id="projects" className="overflow-x-hidden">
-      <div className="container mx-auto mt-10 mb-32 max-w-6xl px-6 pb-10 md:px-8">
+      <div className="container mx-auto mt-10 max-w-6xl px-6 pb-10 md:mb-32 md:px-8">
         {/*  Projects header  */}
         <div className="mb-20 flex justify-center">
-          <h1 className={`${openingSpace}`}>projects</h1>
+          <motion.h1
+            initial={"offscreen"}
+            whileInView={"onscreen"}
+            viewport={{ once: true }}
+            variants={animateH1}
+          >
+            projects
+          </motion.h1>
         </div>
 
         {/*  Items Container row 1  */}
-        <div
-          className={`item-container ${openFromLeft} transition-all duration-1000`}
+        <motion.div
+          initial={"offscreen"}
+          whileInView={"onscreen"}
+          viewport={{ once: true, amount: 0.3 }}
+          variants={animatePic}
+          className={`item-container`}
         >
           {renderProjectRow(projects1)}
-        </div>
+        </motion.div>
         {/*  Items Container row 2  */}
-        <div
-          className={`item-container mt-10 ${openFromRight} transition-all duration-1000`}
+        <motion.div
+          initial={"offscreen"}
+          whileInView={"onscreen"}
+          viewport={{ once: true, amount: 0.3 }}
+          variants={animatePic}
+          className={`item-container mt-10 `}
         >
           {renderProjectRow(projects2)}
-        </div>
+        </motion.div>
       </div>
     </div>
   );

@@ -3,6 +3,8 @@ import circleB from "../images/circle-b.svg";
 import { useState } from "react";
 import { sendEmail } from "../services/emailjs";
 import { Modal } from "./modal";
+import { motion } from "framer-motion";
+import { animatefromBottom } from "./animation";
 
 interface ContactProps {
   openingSpace: string;
@@ -53,7 +55,13 @@ export const Contact: React.FC<ContactProps> = (props) => {
                 </div>
               </div>
             </div>
-            <div className="w-full px-4 lg:w-8/12">
+            <motion.div
+              initial={"offscreen"}
+              whileInView={"onscreen"}
+              viewport={{ once: true, amount: 0 }}
+              variants={animatefromBottom}
+              className="w-full px-4 lg:w-8/12"
+            >
               <div className="relative bg-primary p-8 shadow-2xl dark:bg-[#465162] sm:p-12">
                 <form
                   onSubmit={(e: React.FormEvent<HTMLFormElement>) =>
@@ -117,7 +125,7 @@ export const Contact: React.FC<ContactProps> = (props) => {
                   </span>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>

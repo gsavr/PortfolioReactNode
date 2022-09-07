@@ -21,16 +21,16 @@ export const App: React.FC = () => {
 
   return (
     <div>
-      <Hero openFromLeft={openFromLeft} openFromRight={openFromRight} />
+      <Hero />
       <About
-        openFromLeft={openFromLeft}
+      /* openFromLeft={openFromLeft}
         openFromRight={openFromRight}
-        openingSpace={openingSpace}
+        openingSpace={openingSpace} */
       />
       <Projects
-        openFromLeft={openFromLeft}
+      /* openFromLeft={openFromLeft}
         openFromRight={openFromRight}
-        openingSpace={openingSpace}
+        openingSpace={openingSpace} */
       />
       <Contact openingSpace={openingSpace} />
       <Footer />

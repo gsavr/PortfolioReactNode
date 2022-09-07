@@ -1,26 +1,39 @@
 import photo from "../images/me.jpg";
 import { Skills } from "./skills";
+import { motion } from "framer-motion";
+import {
+  animateH1,
+  animatePic,
+  animatefromLeft,
+  animatefromRight,
+} from "./animation";
 
-interface AboutProps {
-  openFromLeft: string;
-  openFromRight: string;
-  openingSpace: string;
-}
-
-export const About: React.FC<AboutProps> = (props) => {
-  const { openFromLeft, openFromRight, openingSpace } = props;
-
+export const About: React.FC = () => {
   return (
     <div id="about" className="overflow-x-hidden">
       {/*  About Me Container  */}
-      <h1 className={`${openingSpace}`}>About me</h1>
-      <div className="container mx-auto flex flex-col items-center px-6 pb-6 md:flex-row md:space-x-16">
+      <motion.h1
+        initial={"offscreen"}
+        whileInView={"onscreen"}
+        viewport={{ once: true }}
+        variants={animateH1}
+      >
+        About me
+      </motion.h1>
+      <div
+        style={{ overflow: "scroll" }}
+        className="container mx-auto flex flex-col items-center px-6 pb-6 md:flex-row md:space-x-16"
+      >
         {/*  Image  */}
         <div
-          className={`md:w-1/4 ${openFromLeft} w-2/3 rounded-full transition-all duration-1000`}
+          className={`w-2/3 rounded-full transition-all duration-1000 md:w-1/4`}
         >
-          <img
-            className="mb-10 rounded-full shadow-2xl transition-all duration-1000 md:w-fit"
+          <motion.img
+            initial={"offscreen"}
+            whileInView={"onscreen"}
+            viewport={{ once: true, amount: 0.8 }}
+            variants={animatePic}
+            className="mb-10 rounded-full shadow-2xl md:w-fit"
             src={photo}
             alt="Giorgio"
           />
@@ -28,9 +41,15 @@ export const About: React.FC<AboutProps> = (props) => {
 
         {/* Who I am  */}
         <div
-          className={`flex flex-col items-start md:w-2/3 ${openFromRight} transition-all duration-1500`}
+          className={`flex flex-col items-start transition-all  duration-1500 md:w-2/3`}
         >
-          <div className="flex flex-col space-y-5 text-secondary">
+          <motion.div
+            initial={"offscreen"}
+            whileInView={"onscreen"}
+            viewport={{ once: true }}
+            variants={animatefromRight}
+            className="flex flex-col space-y-5 text-secondary"
+          >
             <h2 className="max-w-md text-xl font-bold uppercase md:text-4xl">
               who i am:
             </h2>
@@ -47,20 +66,26 @@ export const About: React.FC<AboutProps> = (props) => {
               and career development to remain at the forefront of an
               ever-changing technology landscape.
             </p>
-          </div>
+          </motion.div>
         </div>
       </div>
 
       {/* Skills  */}
       <div
-        className={`container mx-auto flex flex-col items-center px-6 pb-20  ${openFromLeft} transition-all duration-1500`}
+        className={`container mx-auto flex flex-col items-center px-6 pb-20  transition-all duration-1500`}
       >
-        <div className="flex flex-col space-y-5">
+        <motion.div
+          initial={"offscreen"}
+          whileInView={"onscreen"}
+          viewport={{ once: true }}
+          variants={animatefromLeft}
+          className="flex flex-col space-y-5"
+        >
           <h2 className="max-w-md text-xl font-bold uppercase md:text-4xl">
             Skills:
           </h2>
           <Skills />
-        </div>
+        </motion.div>
 
         {/*  Link  */}
         <div className="mt-4 block">

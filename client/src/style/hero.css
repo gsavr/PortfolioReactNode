@@ -8,5 +8,5 @@
 }
 
 .hero-enter-button {
-  @apply mt-32 flex max-w-md cursor-pointer items-center justify-center border-2 p-4 text-4xl uppercase text-primary transition-all duration-1000 hover:scale-110 hover:rounded-full md:m-32 md:mx-0 md:p-10  md:text-6xl md:leading-normal;
+  @apply mt-32 flex max-w-md cursor-pointer items-center justify-center border-2 p-4 text-4xl uppercase text-primary transition-all duration-1000 hover:scale-110 hover:rounded-full md:m-32 md:mx-0 md:h-72  md:p-10 md:text-6xl md:leading-normal;
 }
