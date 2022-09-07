@@ -3,6 +3,7 @@ import { ToggleTheme } from "../toggleTheme";
 import { Logo } from "./logo";
 import { HamburgerButton } from "./hamburgerButton";
 import { MobileMenu } from "./mobileMenu";
+//import { HashLink as Link } from "react-router-hash-link";
 import { links } from "./links";
 
 export const NavBar: React.FC = () => {

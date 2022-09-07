@@ -3,7 +3,7 @@ import { NavBar } from "./navBar";
 
 export const Hero: React.FC = () => {
   return (
-    <div id="hero" className="hero gradient-bg overflow-x-hidden">
+    <div id="home" className="hero gradient-bg overflow-x-hidden">
       <div className="container mx-auto min-h-screen max-w-6xl px-6 py-12">
         <NavBar />
 

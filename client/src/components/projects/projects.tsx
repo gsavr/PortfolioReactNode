@@ -19,7 +19,11 @@ export const Projects: React.FC = () => {
   ) => {
     return list.map(({ link, srcDesk, srcMobile, title, desc }) => {
       return (
-        <a
+        <motion.a
+          initial={"offscreen"}
+          whileInView={"onscreen"}
+          viewport={{ once: true, amount: 0.3 }}
+          variants={animatePic}
           href={link}
           className="item group"
           target="_blank"
@@ -41,7 +45,7 @@ export const Projects: React.FC = () => {
             <h5 className="uppercase">{title}</h5>
             <p className="project-image-description ">{desc}</p>
           </div>
-        </a>
+        </motion.a>
       );
     });
   };
@@ -62,25 +66,11 @@ export const Projects: React.FC = () => {
         </div>
 
         {/*  Items Container row 1  */}
-        <motion.div
-          initial={"offscreen"}
-          whileInView={"onscreen"}
-          viewport={{ once: true, amount: 0.3 }}
-          variants={animatePic}
-          className={`item-container`}
-        >
-          {renderProjectRow(projects1)}
-        </motion.div>
+        <div className={`item-container`}>{renderProjectRow(projects1)}</div>
         {/*  Items Container row 2  */}
-        <motion.div
-          initial={"offscreen"}
-          whileInView={"onscreen"}
-          viewport={{ once: true, amount: 0.3 }}
-          variants={animatePic}
-          className={`item-container mt-10 `}
-        >
+        <div className={`item-container mt-10 `}>
           {renderProjectRow(projects2)}
-        </motion.div>
+        </div>
       </div>
     </div>
   );

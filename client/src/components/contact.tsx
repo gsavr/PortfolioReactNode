@@ -4,14 +4,9 @@ import { useState } from "react";
 import { sendEmail } from "../services/emailjs";
 import { Modal } from "./modal";
 import { motion } from "framer-motion";
-import { animatefromBottom } from "./animation";
+import { animateH1, animatefromBottom } from "./animation";
 
-interface ContactProps {
-  openingSpace: string;
-}
-
-export const Contact: React.FC<ContactProps> = (props) => {
-  const { openingSpace } = props;
+export const Contact: React.FC = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
@@ -36,9 +31,15 @@ export const Contact: React.FC<ContactProps> = (props) => {
   return (
     <div id="contact">
       <div className={`bg-secondary`}>
-        <h1 className={`bg-secondary ${openingSpace} pt-20 pb-0 lg:pb-14`}>
+        <motion.h1
+          initial={"offscreen"}
+          whileInView={"onscreen"}
+          viewport={{ once: true }}
+          variants={animateH1}
+          className={`bg-secondary pt-20 pb-0 lg:pb-14`}
+        >
           contact me
-        </h1>
+        </motion.h1>
       </div>
       <Modal open={open} setOpen={setOpen} />
       <div className="relative z-10 overflow-x-hidden bg-secondary pt-0 pb-20 md:pt-10 lg:py-12">

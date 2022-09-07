@@ -2,3 +2,11 @@
   filter: brightness(0) saturate(100%) invert(82%) sepia(39%) saturate(291%)
     hue-rotate(105deg) brightness(90%) contrast(92%);
 }
+
+.up-button {
+  @apply absolute top-0 left-1/2 z-50 -translate-x-1/2 -translate-y-9 transform rounded-full bg-[#252c38] shadow-2xl transition-all duration-300 hover:bg-[#81c9b0];
+}
+
+.up-arrow:hover {
+  filter: brightness(0) saturate(100%);
+}
