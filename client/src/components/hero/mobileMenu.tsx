@@ -1,5 +1,6 @@
 import { useEffect } from "react";
-import { links } from "./links";
+import { Link } from "react-scroll";
+import { links, resumeLink } from "./links";
 
 interface MobileMenuProps {
   open: string;
@@ -23,16 +24,16 @@ export const MobileMenu: React.FC<MobileMenuProps> = (props) => {
   const renderLinks = () => {
     return links.map(({ link, label, target, rel }) => {
       return (
-        <a
-          href={link}
+        <Link
+          to={link}
           key={label}
           target={target}
           rel={rel}
           onClick={openMobileMenu}
-          className={`hover:text-[#4fa285] ${opening} transition-all duration-200`}
+          className={`hover:text-[#4fa285] ${opening} cursor-pointer transition-all duration-200`}
         >
           {label}
-        </a>
+        </Link>
       );
     });
   };
@@ -42,14 +43,17 @@ export const MobileMenu: React.FC<MobileMenuProps> = (props) => {
       {open === "open" && (
         <div id="menu" className={`${opening} mobile-menu`}>
           <>
-            <a
-              href="#home"
+            <Link
+              to="hero"
               onClick={openMobileMenu}
-              className={`hover:text-[#4fa285] ${opening} transition-all duration-200`}
+              className={`hover:text-[#4fa285] ${opening} cursor-pointer transition-all duration-200`}
             >
               Home
-            </a>
+            </Link>
             {renderLinks()}
+            <a href={resumeLink.link} target="_blank" rel="noreferrer">
+              Resume
+            </a>
           </>
         </div>
       )}

@@ -3,8 +3,8 @@ import { ToggleTheme } from "../toggleTheme";
 import { Logo } from "./logo";
 import { HamburgerButton } from "./hamburgerButton";
 import { MobileMenu } from "./mobileMenu";
-//import { HashLink as Link } from "react-router-hash-link";
-import { links } from "./links";
+import { Link } from "react-scroll";
+import { links, resumeLink } from "./links";
 
 export const NavBar: React.FC = () => {
   const [open, setOpen] = useState("closed");
@@ -29,10 +29,10 @@ export const NavBar: React.FC = () => {
   const renderLinks = () => {
     return links.map(({ link, label, target, rel }) => {
       return (
-        <div className="group" key={label}>
-          <a href={link} target={target} rel={rel}>
+        <div className="group cursor-pointer" key={label}>
+          <Link to={link} target={target} rel={rel}>
             {label}
-          </a>
+          </Link>
           <div className="mx-2 transition duration-300 group-hover:border-b group-hover:border-[#8bd8bd]"></div>
         </div>
       );
@@ -47,6 +47,9 @@ export const NavBar: React.FC = () => {
       <div className=" hidden h-10 items-center md:flex md:space-x-8">
         {/* All links */}
         {renderLinks()}
+        <a href={resumeLink.link} target="_blank" rel="noreferrer">
+          Resume
+        </a>
         <div className="group">
           <ToggleTheme />
         </div>
