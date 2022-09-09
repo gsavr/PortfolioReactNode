@@ -7,7 +7,7 @@ import {
   animatefromLeft,
   animatefromRight,
 } from "./animation";
-import { Link } from "react-scroll";
+//import { Link } from "react-scroll";
 
 export const About: React.FC = () => {
   return (
