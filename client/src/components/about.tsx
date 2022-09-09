@@ -7,6 +7,7 @@ import {
   animatefromLeft,
   animatefromRight,
 } from "./animation";
+import { Link } from "react-scroll";
 
 export const About: React.FC = () => {
   return (
@@ -88,15 +89,15 @@ export const About: React.FC = () => {
         </motion.div>
 
         {/*  Link  */}
-        <div className="mt-4 block">
-          <a
-            href="#projects"
+        {/* <div className="mt-4 block">
+          <Link
+            to="projects"
             className="border-accentCyan border-b text-accent"
           >
             See my projects
             <img src="images/icon-arrow.svg" alt="" className="inline pb-2" />
-          </a>
-        </div>
+          </Link>
+        </div> */}
       </div>
     </div>
   );
