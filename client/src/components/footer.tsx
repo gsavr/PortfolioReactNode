@@ -15,7 +15,7 @@ export const Footer = () => {
           {/*  Email & Phone  */}
           <div className="mt-14">
             <div className="flex  space-x-3 md:-mt-10">
-              <div>&copy; Giorgio Savron, 2022</div>
+              <div>&copy; 2022 Giorgio Savron</div>
             </div>
           </div>
 

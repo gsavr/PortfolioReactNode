@@ -5,6 +5,7 @@ import { sendEmail } from "../services/emailjs";
 import { Modal } from "./modal";
 import { motion } from "framer-motion";
 import { animateH1, animatefromBottom } from "./animation";
+import { Spinner } from "./spinner";
 
 export const Contact: React.FC = () => {
   const [name, setName] = useState("");
@@ -115,7 +116,13 @@ export const Contact: React.FC = () => {
                         sending ? "bg-[#8bd8bd] shadow-2xl" : "bg-[#243665]"
                       }`}
                     >
-                      {sending ? "Sending ..." : "Message Me"}
+                      {sending ? (
+                        <>
+                          <Spinner /> Sending ...
+                        </>
+                      ) : (
+                        "Message Me"
+                      )}
                     </button>
                   </div>
                 </form>
