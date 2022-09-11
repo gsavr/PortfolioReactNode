@@ -10,9 +10,9 @@ export const Hero: React.FC = () => {
 
         <div className="group flex flex-col lg:flex-row lg:justify-between">
           <motion.div
-            initial={{ opacity: 0, x: "-110vw" }}
+            initial={{ opacity: 0, x: "-35vw" }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ type: "spring", duration: 1, bounce: 0.3 }}
+            transition={{ type: "spring", duration: 2, bounce: 0.3 }}
           >
             <div className={`hero-box`}>
               Hello, I'm{" "}
@@ -23,9 +23,9 @@ export const Hero: React.FC = () => {
             </div>
           </motion.div>
           <motion.div
-            initial={{ opacity: 0, x: "110vw" }}
+            initial={{ opacity: 0, x: "35vw" }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ type: "spring", duration: 1.5, bounce: 0.3 }}
+            transition={{ type: "spring", duration: 2.5, bounce: 0.3 }}
           >
             <Link to="about" className={`hero-enter-button`}>
               <p>Enter</p>

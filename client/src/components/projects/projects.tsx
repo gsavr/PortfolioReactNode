@@ -1,11 +1,6 @@
 import { projects1, projects2 } from "./project-list";
 import { motion } from "framer-motion";
-import {
-  animateH1,
-  animatePic,
-  animatefromLeft,
-  animatefromRight,
-} from "../animation";
+import { animateH1, animatePic } from "../animation";
 
 export const Projects: React.FC = () => {
   const renderProjectRow = (
@@ -68,7 +63,7 @@ export const Projects: React.FC = () => {
         {/*  Items Container row 1  */}
         <div className={`item-container`}>{renderProjectRow(projects1)}</div>
         {/*  Items Container row 2  */}
-        <div className={`item-container mt-10 `}>
+        <div className={`item-container mt-6 md:mt-10`}>
           {renderProjectRow(projects2)}
         </div>
       </div>
