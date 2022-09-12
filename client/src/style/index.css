@@ -31,6 +31,7 @@ html {
 @import "./projects.css";
 @import "./contact.css";
 @import "./footer.css";
+@import "./sticky-menu.css";
 
 @layer base {
   h1 {
