@@ -1,13 +1,6 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-
-// Add the smooth behavior to go to top
-export const goToTop = () => {
-  document.documentElement.scrollTo({
-    top: 0,
-    behavior: "smooth",
-  });
-};
+import { Link } from "react-scroll";
 
 export const StickyMenu = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -44,20 +37,21 @@ export const StickyMenu = () => {
   return (
     <AnimatePresence>
       {scrollPosition > 650 && scrollPosition < 3200 && (
-        <motion.button
-          onClick={goToTop}
-          className="scrollToTop-btn"
-          initial={{ y: 100, opacity: 0 }}
-          animate={{ y: 0, opacity: 1, transition: { duration: 0.6 } }}
-          exit={{ y: 100, opacity: 0, transition: { duration: 0.6 } }}
-          whileHover={{
-            scale: 1.1,
-            transition: { duration: 0.2 },
-          }}
-          whileTap={{ scale: 1 }}
-        >
-          {arrowUp}
-        </motion.button>
+        <Link to="hero">
+          <motion.button
+            className="scrollToTop-btn"
+            initial={{ y: 100, opacity: 0 }}
+            animate={{ y: 0, opacity: 1, transition: { duration: 0.6 } }}
+            exit={{ y: 100, opacity: 0, transition: { duration: 0.6 } }}
+            whileHover={{
+              scale: 1.1,
+              transition: { duration: 0.2 },
+            }}
+            whileTap={{ scale: 1 }}
+          >
+            {arrowUp}
+          </motion.button>
+        </Link>
       )}
     </AnimatePresence>
   );

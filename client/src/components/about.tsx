@@ -21,10 +21,7 @@ export const About: React.FC = () => {
       >
         About me
       </motion.h1>
-      <div
-        style={{ overflow: "scroll" }}
-        className="container mx-auto flex flex-col items-center px-6 pb-6 md:flex-row md:space-x-16"
-      >
+      <div className="container mx-auto flex flex-col items-center px-6 pb-6 md:flex-row md:space-x-16">
         {/*  Image  */}
         <div
           className={`w-2/3 rounded-full transition-all duration-1000 md:w-1/4`}

@@ -1,6 +1,5 @@
 .arrowUp {
-  width: 1.5rem;
-  height: 1.5rem;
+  @apply h-6 w-6;
 }
 
 .scrollToTop-btn {
