@@ -30,7 +30,13 @@ export const NavBar: React.FC = () => {
     return links.map(({ link, label, target, rel }) => {
       return (
         <div className="group cursor-pointer" key={label}>
-          <Link to={link} target={target} rel={rel}>
+          <Link
+            to={link}
+            duration={800}
+            smooth={true}
+            target={target}
+            rel={rel}
+          >
             {label}
           </Link>
           <div className="mx-2 transition duration-300 group-hover:border-b group-hover:border-[#8bd8bd]"></div>
