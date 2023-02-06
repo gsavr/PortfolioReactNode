@@ -10,6 +10,8 @@ import red from "../images/skills/red.svg";
 import ex from "../images/skills/ex.svg";
 import bs from "../images/skills/bs.svg";
 import ps from "../images/skills/ps.svg";
+import java from "../images/skills/java.svg";
+import python from "../images/skills/python.svg";
 
 export const Skills = () => {
   return (
@@ -26,6 +28,8 @@ export const Skills = () => {
             />
             <div>React</div>
           </div>
+          {/* --- */}
+          {/* Skill */}
           <div className="flex w-1/3 flex-col items-center">
             <img
               src={ts}
@@ -34,6 +38,8 @@ export const Skills = () => {
             />
             <div>Typescript</div>
           </div>
+          {/* --- */}
+          {/* Skill */}
           <div className="flex w-1/3 flex-col items-center">
             <img
               src={js}
@@ -42,17 +48,11 @@ export const Skills = () => {
             />
             <div>Javascript</div>
           </div>
+          {/* --- */}
         </div>
         {/*2nd next 3 */}
         <div className="flex space-x-10 md:space-x-12 lg:space-x-24 ">
-          <div className="flex w-1/3 flex-col items-center">
-            <img src={html} alt="html" className="h-16 w-16 lg:h-20 lg:w-20 " />
-            <div>HTML</div>
-          </div>
-          <div className="flex w-1/3 flex-col items-center">
-            <img src={css} alt="css" className="h-16 w-16 lg:h-20 lg:w-20" />
-            <div>CSS</div>
-          </div>
+          {/* Skill */}
           <div className="flex w-1/3 flex-col items-center">
             <img
               src={node}
@@ -61,11 +61,61 @@ export const Skills = () => {
             />
             <div>Node.js</div>
           </div>
+          {/* --- */}
+          {/* Skill */}
+          <div className="flex w-1/3 flex-col items-center">
+            <img src={java} alt="java" className="h-16 w-16 lg:h-20 lg:w-20" />
+            <div>Java</div>
+          </div>
+          {/* --- */}
+          {/* Skill */}
+          <div className="flex w-1/3 flex-col items-center">
+            <img
+              src={python}
+              alt="python"
+              className="h-16 w-16 lg:h-20 lg:w-20"
+            />
+            <div>Python</div>
+          </div>
+          {/* --- */}
         </div>
       </div>
       <div className="flex flex-col space-y-4 md:flex-row md:space-x-12 md:space-y-0 lg:space-x-24 ">
         {/*3rd  3 items */}
         <div className="flex space-x-10 md:space-x-12 lg:space-x-24 ">
+          {/* Skill */}
+          <div className="flex w-1/3 flex-col items-center">
+            <img src={html} alt="html" className="h-16 w-16 lg:h-20 lg:w-20 " />
+            <div>HTML</div>
+          </div>
+          {/* --- */}
+          {/* Skill */}
+          <div className="flex w-1/3 flex-col items-center">
+            <img src={css} alt="css" className="h-16 w-16 lg:h-20 lg:w-20" />
+            <div>CSS</div>
+          </div>
+          {/* --- */}
+          {/* Skill */}
+          <div className="flex w-1/3 flex-col items-center">
+            <img
+              src={tw}
+              alt="TailwindCSS"
+              className="h-16 w-16 lg:h-20 lg:w-20 "
+            />
+            <div>Tailwind</div>
+            <div>CSS</div>
+          </div>
+          {/* --- */}
+        </div>
+        {/* 4th 3 items */}
+        <div className="flex space-x-10 md:space-x-12 lg:space-x-24 ">
+          {/* Skill */}
+          <div className="flex w-1/3 flex-col items-center">
+            <img src={red} alt="Redux" className="h-16 w-16 lg:h-20 lg:w-20" />
+            <div>Redux</div>
+          </div>
+          {/* --- */}
+          {/* Skill */}
           <div className="flex w-1/3 flex-col items-center">
             <img
               src={mdb}
@@ -74,21 +124,8 @@ export const Skills = () => {
             />
             <div>MongoDB</div>
           </div>
-          <div className="flex w-1/3 flex-col items-center">
-            <img
-              src={tw}
-              alt="TailwindCSS"
-              className="h-16 w-16 lg:h-20 lg:w-20 "
-            />
-            <div>TailwindCSS</div>
-          </div>
-          <div className="flex w-1/3 flex-col items-center">
-            <img src={red} alt="Redux" className="h-16 w-16 lg:h-20 lg:w-20" />
-            <div>Redux</div>
-          </div>
-        </div>
-        {/* 4th 3 items */}
-        <div className="flex space-x-10 md:space-x-12 lg:space-x-24 ">
+          {/* --- */}
+          {/* Skill */}
           <div className="flex w-1/3 flex-col items-center">
             <img
               src={ex}
@@ -97,6 +134,13 @@ export const Skills = () => {
             />
             <div>Express</div>
           </div>
+          {/* --- */}
+        </div>
+      </div>
+      <div className="flex flex-col space-y-4 md:flex-row md:space-x-12 md:space-y-0 lg:space-x-24 ">
+        {/* 5th 2 items ---- updating skills */}
+        <div className="flex space-x-10 md:space-x-12 lg:space-x-24 ">
+          {/* Skill */}
           <div className="flex w-1/3 flex-col items-center">
             <img
               src={bs}
@@ -105,6 +149,8 @@ export const Skills = () => {
             />
             <div>Bootstrap</div>
           </div>
+          {/* --- */}
+          {/* Skill */}
           <div className="flex w-1/3 flex-col items-center">
             <img
               src={ps}
@@ -114,6 +160,15 @@ export const Skills = () => {
             <div>Photoshop</div>
           </div>
         </div>
+        {/* --- */}
+        {/* <div className="flex w-1/3 flex-col items-center">
+          <img
+            src={ps}
+            alt="Photoshop"
+            className="h-16 w-16 lg:h-20 lg:w-20 "
+          />
+          <div>Photoshop</div>
+        </div> */}
       </div>
     </div>
   );
