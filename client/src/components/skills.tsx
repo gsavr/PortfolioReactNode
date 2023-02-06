@@ -89,6 +89,7 @@ export const Skills = () => {
             <div>HTML</div>
           </div>
           {/* --- */}
+
           {/* Skill */}
           <div className="flex w-1/3 flex-col items-center">
             <img src={css} alt="css" className="h-16 w-16 lg:h-20 lg:w-20" />
@@ -96,14 +97,13 @@ export const Skills = () => {
           </div>
           {/* --- */}
           {/* Skill */}
-          <div className="flex w-1/3 flex-col items-center">
+          <div className="flex w-1/4 flex-col items-center">
             <img
               src={tw}
               alt="TailwindCSS"
               className="h-16 w-16 lg:h-20 lg:w-20 "
             />
-            <div>Tailwind</div>
-            <div>CSS</div>
+            <div>TailwindCSS</div>
           </div>
           {/* --- */}
         </div>
