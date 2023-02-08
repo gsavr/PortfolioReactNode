@@ -1,5 +1,5 @@
 import photo from "../images/me.jpg";
-import { Skills } from "./skills";
+import { Skills } from "./skills/skills";
 import { motion } from "framer-motion";
 import {
   animateH1,
