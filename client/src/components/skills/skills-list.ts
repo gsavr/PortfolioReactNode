@@ -13,6 +13,7 @@ import ex from "../../images/skills/ex.svg";
 import docker from "../../images/skills/docker.svg";
 import bs from "../../images/skills/bs.svg";
 import ps from "../../images/skills/ps.svg";
+import sql from "../../images/skills/sql.svg";
 
 export const skills1 = [
   { src: react, alt: "react_logo", title: "React" },
@@ -29,7 +30,7 @@ export const skills2 = [
 export const skills3 = [
   { src: html, alt: "html_logo", title: "HTML" },
   { src: css, alt: "css_logo", title: "CSS" },
-  { src: tw, alt: "tailwindCSS_logo", title: "TailwindCSS", w: "1/4" },
+  { src: tw, alt: "tailwindCSS_logo", title: "TailwindCSS" },
 ];
 
 export const skills4 = [
@@ -43,3 +44,5 @@ export const skills5 = [
   { src: bs, alt: "bootstrap_logo", title: "Bootstrap" },
   { src: ps, alt: "photoshop_logo", title: "Photoshop" },
 ];
+
+export const skills6 = [{ src: sql, alt: "sql_logo", title: "SQL" }];
