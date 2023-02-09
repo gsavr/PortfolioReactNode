@@ -1,11 +1,4 @@
-import {
-  skills1,
-  skills2,
-  skills3,
-  skills4,
-  skills5,
-  skills6,
-} from "./skills-list";
+import { skills1, skills2, skills3, skills4 } from "./skills-list";
 
 export const Skills = () => {
   const renderSkillGroup = (
@@ -23,7 +16,7 @@ export const Skills = () => {
     return skills.map(({ src, alt, title }) => {
       return (
         <div className={`w-"1/3" flex flex-col items-center`}>
-          <img src={src} alt={alt} className="h-14 w-14 lg:h-16 lg:w-16 " />
+          <img src={src} alt={alt} className="h-16 w-16 lg:h-20 lg:w-20 " />
           <div className="flex w-20 justify-center">{title}</div>
         </div>
       );
@@ -47,13 +40,6 @@ export const Skills = () => {
         </div>
         {/* 4th 3 items */}
         {renderSkillGroup(skills4)}
-      </div>
-      {/* 3rd ROW of up to 6 */}
-      <div className="flex flex-col space-y-4 md:flex-row md:space-x-12 md:space-y-0 lg:space-x-24 ">
-        {/* 5th 3 items */}
-        {renderSkillGroup(skills5)}
-        {/* 6th 3 items */}
-        <div className="hidden md:flex">{renderSkillGroup(skills6)}</div>
       </div>
     </div>
   );
