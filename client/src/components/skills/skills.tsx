@@ -16,8 +16,8 @@ export const Skills = () => {
     return skills.map(({ src, alt, title, w }) => {
       return (
         <div className={`flex w-${w ? w : "1/3"} flex-col items-center`}>
-          <img src={src} alt={alt} className="h-16 w-16 lg:h-20 lg:w-20 " />
-          <div>{title}</div>
+          <img src={src} alt={alt} className="h-14 w-14 lg:h-16 lg:w-16 " />
+          <div className="flex w-20 justify-center">{title}</div>
         </div>
       );
     });
