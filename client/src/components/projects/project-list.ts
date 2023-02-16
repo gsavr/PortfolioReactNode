@@ -6,14 +6,16 @@ import texterDesk from "../../images/projects/desktop/texter.jpg";
 import texterMob from "../../images/projects/mobile/texter.jpg";
 import swDesk from "../../images/projects/desktop/sw.jpg";
 import swMob from "../../images/projects/mobile/sw.jpg";
-import gatsbyDesk from "../../images/projects/desktop/gatsby.jpg";
-import gatsbyMob from "../../images/projects/mobile/gatsby.jpg";
+//import gatsbyDesk from "../../images/projects/desktop/gatsby.jpg";
+//import gatsbyMob from "../../images/projects/mobile/gatsby.jpg";
 import codeDesk from "../../images/projects/desktop/code.jpg";
 import codeMob from "../../images/projects/mobile/code.jpg";
 import hangDesk from "../../images/projects/desktop/hangman.jpg";
 import hangMob from "../../images/projects/mobile/hangman.jpg";
 import famguyDesk from "../../images/projects/desktop/famguy.jpg";
 import famguyMob from "../../images/projects/mobile/famguy.jpg";
+import moviesDesk from "../../images/projects/desktop/movies.jpg";
+import moviesMob from "../../images/projects/mobile/movies.jpg";
 
 export const projects1 = [
   {
@@ -47,12 +49,19 @@ export const projects1 = [
 ];
 
 export const projects2 = [
-  {
+  /*  {
     link: "https://gatsbycontentfulcloudclass.gatsbyjs.io/",
     srcDesk: gatsbyDesk,
     srcMobile: gatsbyMob,
     title: "Gatsby Rendered site",
     desc: "React | Gatsby | Contentful",
+  }, */
+  {
+    link: "https://movie-search-gs.netlify.app/",
+    srcDesk: moviesDesk,
+    srcMobile: moviesMob,
+    title: "Movie Search",
+    desc: "React | Redux Toolkit | Typescript",
   },
   {
     link: "https://github.com/gsavr/Code-Note-Editor",
