@@ -16,6 +16,10 @@ import famguyDesk from "../../images/projects/desktop/famguy.jpg";
 import famguyMob from "../../images/projects/mobile/famguy.jpg";
 import moviesDesk from "../../images/projects/desktop/movies.jpg";
 import moviesMob from "../../images/projects/mobile/movies.jpg";
+import trackerDesk from "../../images/projects/desktop/tracker.jpg";
+import trackerMob from "../../images/projects/mobile/tracker.jpg";
+import foodieDesk from "../../images/projects/desktop/foodie.jpg";
+import foodieMob from "../../images/projects/mobile/foodie.jpg";
 
 export const projects1 = [
   {
@@ -46,6 +50,13 @@ export const projects1 = [
     title: "Star Wars Planets",
     desc: "React | ReduxToolkit | React-Router",
   },
+  {
+    link: "https://github.com/gsavr/activity-tracker-react-native",
+    srcDesk: trackerDesk,
+    srcMobile: trackerMob,
+    title: "Activity Tracker",
+    desc: "React Native | Node.js | MongoDB",
+  },
 ];
 
 export const projects2 = [
@@ -69,6 +80,13 @@ export const projects2 = [
     srcMobile: codeMob,
     title: "Code & Text Editor",
     desc: "Run on Node env | npx jsnote-gs serve",
+  },
+  {
+    link: "https://github.com/gsavr/food-finder-react-native ",
+    srcDesk: foodieDesk,
+    srcMobile: foodieMob,
+    title: "Foodie Finder",
+    desc: "React Native | Axios",
   },
   {
     link: "https://gsavr.github.io/Word-Guess-Game/",
