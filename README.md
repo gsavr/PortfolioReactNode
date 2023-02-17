@@ -1,6 +1,14 @@
 # Portfolio
 
-### Built with React, Typescript, Tailwind CSS
+### Technology used:
+
+- React
+- Typescript
+- Tailwind CSS
+
+### Live site
+
+[Portfolio](https://www.giorgiosavron.com/)
 
 ### Preview
 
