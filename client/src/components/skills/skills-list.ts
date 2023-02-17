@@ -30,7 +30,12 @@ export const skills3 = [
 ];
 
 export const skills4 = [
-  { src: ex, alt: "express_logo", title: "Express" },
+  {
+    src: ex,
+    alt: "express_logo",
+    title: "Express",
+    dark: "dark:rounded-full dark:bg-slate-300 dark:p-1",
+  },
   { src: bs, alt: "bootstrap_logo", title: "Bootstrap" },
   { src: ps, alt: "photoshop_logo", title: "Photoshop" },
 ];
