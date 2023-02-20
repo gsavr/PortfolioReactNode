@@ -1,5 +1,5 @@
 .item-container {
-  @apply flex w-full flex-col justify-between space-y-6 text-xl text-white md:flex-row md:space-y-0 md:space-x-8 lg:text-2xl;
+  @apply flex w-full flex-col justify-between space-y-6 text-xl text-white md:flex-row md:space-y-0 md:space-x-8 md:text-lg lg:text-2xl;
 }
 
 .item {
@@ -11,7 +11,7 @@
 }
 
 .project-image-text {
-  @apply absolute bottom-4 max-w-full px-4 duration-200 group-hover:scale-110 group-hover:text-black lg:bottom-8 lg:px-10;
+  @apply absolute bottom-4 max-w-full px-4 duration-200 group-hover:scale-110 group-hover:text-black md:px-3 lg:bottom-8 lg:px-5;
 }
 
 .project-image-description {
