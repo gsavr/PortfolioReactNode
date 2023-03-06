@@ -53,7 +53,7 @@ export const About: React.FC = () => {
             </h2>
             <p className="text-md md:text-lg">
               Full-Stack Software Engineer specialized in React.js, JavaScript,
-              Typescript, HTML/CSS, Tailwind css, Node.js, with an objective to
+              Typescript, HTML/CSS, TailwindCSS, Node.js, with an objective to
               develop websites and applications that are client-driven while
               ensuring that they are straightforward and engaging for the end
               user.

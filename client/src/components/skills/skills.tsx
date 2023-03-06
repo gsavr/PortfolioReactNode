@@ -45,6 +45,13 @@ export const Skills = () => {
         {/* 4th 3 items */}
         {renderSkillGroup(skills4)}
       </div>
+      {/* 3rd ROW of 6 */}
+      {/*   <div className="flex flex-col space-y-4 md:flex-row md:space-x-12 md:space-y-0 lg:space-x-24 "> */}
+      {/*5th  3 items */}
+      {/*   {renderSkillGroup(skills5)} */}
+      {/* 6th 3 items */}
+      {/*   <div className="hidden md:flex">{renderSkillGroup(skills6)}</div>
+      </div> */}
     </div>
   );
 };
