@@ -49,7 +49,7 @@ export const Projects: React.FC = () => {
     <div id="projects" className="overflow-x-hidden">
       <div className="container mx-auto mt-10 max-w-6xl px-6 pb-10 md:mb-32 md:px-8">
         {/*  Projects header  */}
-        <div className="mb-20 flex justify-center">
+        <div className="mb-6 flex justify-center md:mb-20">
           <motion.h1
             initial={"offscreen"}
             whileInView={"onscreen"}

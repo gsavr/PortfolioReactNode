@@ -70,7 +70,7 @@ export const About: React.FC = () => {
 
       {/* Skills  */}
       <div
-        className={`container mx-auto flex flex-col items-center px-6 pb-20  transition-all duration-1500`}
+        className={`container mx-auto flex flex-col items-center px-6 transition-all duration-1500  md:pb-16 lg:pb-20`}
       >
         <motion.div
           initial={"offscreen"}
