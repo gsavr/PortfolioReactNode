@@ -63,7 +63,8 @@ export const Projects: React.FC = () => {
         {/*  Items Container row 1  */}
         <div className={`item-container`}>{renderProjectRow(projects1)}</div>
         {/*  Items Container row 2  */}
-        <div className={`item-container mt-6 md:mt-10`}>
+        {/* Adjust text size when displaying 6 projects - with 5 - leave */}
+        <div className={`item-container mt-6 md:mt-10 md:text-base lg:text-xl`}>
           {renderProjectRow(projects2)}
         </div>
       </div>

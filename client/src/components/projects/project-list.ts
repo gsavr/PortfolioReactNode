@@ -20,8 +20,17 @@ import trackerDesk from "../../images/projects/desktop/tracker.jpg";
 import trackerMob from "../../images/projects/mobile/tracker.jpg";
 import foodieDesk from "../../images/projects/desktop/foodie.jpg";
 import foodieMob from "../../images/projects/mobile/foodie.jpg";
+import blogAiDesk from "../../images/projects/desktop/blog-ai.jpg";
+import blogAiMob from "../../images/projects/mobile/blog-ai.jpg";
 
 export const projects1 = [
+  {
+    link: "https://blogger-gs.herokuapp.com/",
+    srcDesk: blogAiDesk,
+    srcMobile: blogAiMob,
+    title: "Blogger Open-AI",
+    desc: "Next.js | OpenAI API | MongoDB | Auth-0", //
+  },
   {
     link: "https://glacial-sands-58335.herokuapp.com/",
     srcDesk: emailDesk,
@@ -30,26 +39,20 @@ export const projects1 = [
     desc: "React | Node.js | Redux | GoogleAuth",
   },
   {
+    link: "https://movie-search-gs.netlify.app/",
+    srcDesk: moviesDesk,
+    srcMobile: moviesMob,
+    title: "Movie Search",
+    desc: "React | Redux Toolkit | Typescript",
+  },
+  {
     link: "https://afternoon-mesa-81480.herokuapp.com/",
     srcDesk: triviaDesk,
     srcMobile: triviaMob,
     title: "Trivia Challenge",
     desc: "React | ReduxToolkit | React-Router",
   },
-  {
-    link: "https://texter123-dev.herokuapp.com/",
-    srcDesk: texterDesk,
-    srcMobile: texterMob,
-    title: "Campaign Texting",
-    desc: "React | Node.js | Twilio | Auth0",
-  },
-  {
-    link: "https://damp-mountain-94831.herokuapp.com/",
-    srcDesk: swDesk,
-    srcMobile: swMob,
-    title: "Star Wars Planets",
-    desc: "React | ReduxToolkit | React-Router",
-  },
+
   {
     link: "https://github.com/gsavr/activity-tracker-react-native",
     srcDesk: trackerDesk,
@@ -68,11 +71,11 @@ export const projects2 = [
     desc: "React | Gatsby | Contentful",
   }, */
   {
-    link: "https://movie-search-gs.netlify.app/",
-    srcDesk: moviesDesk,
-    srcMobile: moviesMob,
-    title: "Movie Search",
-    desc: "React | Redux Toolkit | Typescript",
+    link: "https://texter123-dev.herokuapp.com/",
+    srcDesk: texterDesk,
+    srcMobile: texterMob,
+    title: "Campaign Texting",
+    desc: "React | Node.js | Twilio | Auth0",
   },
   {
     link: "https://github.com/gsavr/Code-Note-Editor",
@@ -80,6 +83,13 @@ export const projects2 = [
     srcMobile: codeMob,
     title: "Code & Text Editor",
     desc: "Run on Node env | npx jsnote-gs serve",
+  },
+  {
+    link: "https://damp-mountain-94831.herokuapp.com/",
+    srcDesk: swDesk,
+    srcMobile: swMob,
+    title: "Star Wars Planets",
+    desc: "React | ReduxToolkit | React-Router",
   },
   {
     link: "https://github.com/gsavr/food-finder-react-native ",
