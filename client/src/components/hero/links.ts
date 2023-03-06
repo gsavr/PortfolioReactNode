@@ -1,5 +1,5 @@
 export const links = [
-  { link: "about", label: "About", target: "", rel: "" },
+  { link: "about", label: "About Me", target: "", rel: "" },
   { link: "projects", label: "Projects", target: "", rel: "" },
   { link: "contact", label: "Contact", target: "", rel: "" },
 ];
