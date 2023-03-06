@@ -1,11 +1,18 @@
-import { skills1, skills2, skills2_1, skills3, skills4 } from "./skills-list";
+import {
+  skills1,
+  skills2,
+  skills2_1,
+  skills3,
+  skills4,
+  skills5,
+} from "./skills-list";
 
 export const Skills = () => {
   const renderSkillGroup = (
     skills: { src: string; alt: string; title: string; dark?: string }[]
   ) => {
     return (
-      <div className="flex space-x-10 md:space-x-12 lg:space-x-24 ">
+      <div className=" flex space-x-10 md:space-x-9 lg:space-x-16 ">
         {renderSkills(skills)}
       </div>
     );
@@ -28,31 +35,35 @@ export const Skills = () => {
   };
 
   return (
-    <div className="flex flex-col items-center space-y-4 text-secondary">
+    <div className="flex flex-col items-center space-y-4 text-secondary md:space-y-8 lg:space-x-0">
       {/* 6 in a row down to md screen // 3 per row on mobile */}
-      <div className="flex flex-col space-y-4 md:flex-row md:space-x-12 md:space-y-0 lg:space-x-24">
+      {/* changed lg:space-x-24 down to space-x-16, md:space-x-12 to 9 to better adapt to smaller screens */}
+      <div className="flex flex-col space-y-4 md:flex-row md:space-x-9 md:space-y-0 lg:space-x-16">
         {/* 1st 3 itmes */}
         {renderSkillGroup(skills1)}
         {/* 2nd next 3 */}
         {renderSkillGroup(skills2)}
-        {renderSkillGroup(skills2_1)}
+        {/* ----- Adding additional skills -- conditional rendering ----- */}
+        <div className="hidden md:flex">{renderSkillGroup(skills2_1)}</div>
       </div>
       {/* 2nd ROW of 6 */}
-      <div className="flex flex-col space-y-4 md:flex-row md:space-x-12 md:space-y-0 lg:space-x-24 ">
+      <div className="flex flex-col space-y-4 md:mb-5 md:flex-row md:space-x-9 md:space-y-0 lg:space-x-16">
         {/*3rd  3 items */}
-        <div className="flex space-x-10 md:space-x-12 lg:space-x-24 ">
-          {renderSkills(skills3)}
-        </div>
+        {renderSkillGroup(skills3)}
         {/* 4th 3 items */}
         {renderSkillGroup(skills4)}
+        {/* ---- Adding additional skills -- conditional rendering ----- */}
+        <div className=" mx-auto flex space-x-10 md:space-x-9 lg:space-x-16 ">
+          {renderSkills(skills5)}
+          <div className="flex md:hidden"> {renderSkills(skills2_1)}</div>
+        </div>
       </div>
       {/* 3rd ROW of 6 */}
       {/*   <div className="flex flex-col space-y-4 md:flex-row md:space-x-12 md:space-y-0 lg:space-x-24 "> */}
       {/*5th  3 items */}
-      {/*   {renderSkillGroup(skills5)} */}
+
       {/* 6th 3 items */}
-      {/*   <div className="hidden md:flex">{renderSkillGroup(skills6)}</div>
-      </div> */}
+      {/* </div> */}
     </div>
   );
 };
