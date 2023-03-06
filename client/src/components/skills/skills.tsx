@@ -1,4 +1,4 @@
-import { skills1, skills2, skills3, skills4 } from "./skills-list";
+import { skills1, skills2, skills2_1, skills3, skills4 } from "./skills-list";
 
 export const Skills = () => {
   const renderSkillGroup = (
@@ -19,7 +19,7 @@ export const Skills = () => {
           <img
             src={src}
             alt={alt}
-            className={`${dark ? dark : ""} h-16 w-16 lg:h-20 lg:w-20`}
+            className={`${dark ? dark : ""} h-14 w-14 lg:h-16 lg:w-16`}
           />
           <div className="flex w-20 justify-center">{title}</div>
         </div>
@@ -35,6 +35,7 @@ export const Skills = () => {
         {renderSkillGroup(skills1)}
         {/* 2nd next 3 */}
         {renderSkillGroup(skills2)}
+        {renderSkillGroup(skills2_1)}
       </div>
       {/* 2nd ROW of 6 */}
       <div className="flex flex-col space-y-4 md:flex-row md:space-x-12 md:space-y-0 lg:space-x-24 ">

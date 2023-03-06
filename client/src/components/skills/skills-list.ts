@@ -10,6 +10,8 @@ import mdb from "../../images/skills/mdb.svg";
 import ex from "../../images/skills/ex.svg";
 import bs from "../../images/skills/bs.svg";
 import ps from "../../images/skills/ps.svg";
+import java from "../../images/skills/java.svg";
+import next from "../../images/skills/next.svg";
 
 export const skills1 = [
   { src: react, alt: "react_logo", title: "React" },
@@ -22,6 +24,8 @@ export const skills2 = [
   { src: css, alt: "css_logo", title: "CSS" },
   { src: node, alt: "node.js_logo", title: "Node.js" },
 ];
+
+export const skills2_1 = [{ src: java, alt: "java_logo", title: "Java" }];
 
 export const skills3 = [
   { src: mdb, alt: "mongodb_logo", title: "MongoDB" },
@@ -39,3 +43,5 @@ export const skills4 = [
   { src: bs, alt: "bootstrap_logo", title: "Bootstrap" },
   { src: ps, alt: "photoshop_logo", title: "Photoshop" },
 ];
+
+export const skills5 = [{ src: next, alt: "next.js_logo", title: "Next.js" }];
