@@ -37,7 +37,7 @@ export const Skills = () => {
   return (
     <div className="flex flex-col items-center space-y-4 text-secondary md:space-y-8 lg:space-x-0">
       {/* 6 in a row down to md screen // 3 per row on mobile */}
-      {/* changed lg:space-x-24 down to space-x-16, md:space-x-12 to 9 to better adapt to smaller screens */}
+      {/* 6-in row - lg:space-x-24 md:space-x-12; 7-in row lg:space-x-16 md:space-x-9 */}
       <div className="flex flex-col space-y-4 md:flex-row md:space-x-9 md:space-y-0 lg:space-x-16">
         {/* 1st 3 itmes */}
         {renderSkillGroup(skills1)}
