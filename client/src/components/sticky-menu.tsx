@@ -7,8 +7,9 @@ export const StickyMenu = () => {
   //console.log("scroll position", scrollPosition);
 
   const bottom = document.body.offsetHeight - 1200;
-  console.log("height", document.body.offsetHeight);
+  //console.log("height", document.body.offsetHeight);
   //console.log(bottom);
+  //console.log(document.body.scrollHeight);
 
   useEffect(() => {
     const updatePosition = () => {
