@@ -4,7 +4,11 @@ import { Link } from "react-scroll";
 
 export const StickyMenu = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
-  //console.log(scrollPosition);
+  //console.log("scroll position", scrollPosition);
+
+  const bottom = document.body.offsetHeight - 1200;
+  console.log("height", document.body.offsetHeight);
+  //console.log(bottom);
 
   useEffect(() => {
     const updatePosition = () => {
@@ -37,7 +41,7 @@ export const StickyMenu = () => {
   return (
     <>
       <AnimatePresence>
-        {scrollPosition > 650 && scrollPosition < 3200 && (
+        {scrollPosition > 650 && scrollPosition < bottom && (
           <Link to="hero">
             <motion.button
               className="scrollToTop-btn"

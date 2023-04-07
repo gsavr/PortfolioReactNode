@@ -6,13 +6,13 @@ import { Link } from "react-scroll";
 export const Footer = () => {
   return (
     <footer className="bg-[#252c38] text-white">
-      <div className="container relative mx-auto px-5 pb-10 pt-12">
+      <div className="container relative mx-auto px-5 md:pb-10 md:pt-12">
         <Link to="hero" className="up-button cursor-pointer">
           <img src={arrows} alt="" className="up-arrow h-16 w-16" />
         </Link>
         {/*  Flex container for all items  */}
         <div className="flex flex-col items-center justify-between space-y-24 md:flex-row md:space-y-0">
-          {/*  Email & Phone  */}
+          {/*  Copy  */}
           <div className="mt-14">
             <div className="flex  space-x-3 md:-mt-10">
               <div>&copy; 2023 Giorgio Savron</div>
