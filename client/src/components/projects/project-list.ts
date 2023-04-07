@@ -70,6 +70,13 @@ export const projects2 = [
     title: "Gatsby Rendered site",
     desc: "React | Gatsby | Contentful",
   }, */
+  /*  {
+    link: "https://fib-app.vercel.app/",
+    srcDesk: ...,
+    srcMobile: ...,
+    title: "Fibonacci Calculator",
+    desc: "React | Docker | Node.js | AWS",
+  }, */
   {
     link: "https://texter123-dev.herokuapp.com/",
     srcDesk: texterDesk,

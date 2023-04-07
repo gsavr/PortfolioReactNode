@@ -5,7 +5,7 @@ export const links = [
 ];
 
 export const resumeLink = {
-  link: "https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:a3a9e1be-4f3f-4b13-89c8-6b27e759f25b",
+  link: "https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:74b379ed-4d59-42ed-9886-26a89c74df84",
   label: "Resume",
   target: "_blank",
   rel: "noreferrer",

@@ -4,7 +4,7 @@ import { Link } from "react-scroll";
 
 export const StickyMenu = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
-  console.log(scrollPosition);
+  //console.log(scrollPosition);
 
   useEffect(() => {
     const updatePosition = () => {
@@ -35,24 +35,26 @@ export const StickyMenu = () => {
   );
 
   return (
-    <AnimatePresence>
-      {scrollPosition > 650 && scrollPosition < 3200 && (
-        <Link to="hero">
-          <motion.button
-            className="scrollToTop-btn"
-            initial={{ y: 100, opacity: 0 }}
-            animate={{ y: 0, opacity: 1, transition: { duration: 0.6 } }}
-            exit={{ y: 100, opacity: 0, transition: { duration: 0.6 } }}
-            whileHover={{
-              scale: 1.1,
-              transition: { duration: 0.2 },
-            }}
-            whileTap={{ scale: 1 }}
-          >
-            {arrowUp}
-          </motion.button>
-        </Link>
-      )}
-    </AnimatePresence>
+    <>
+      <AnimatePresence>
+        {scrollPosition > 650 && scrollPosition < 3200 && (
+          <Link to="hero">
+            <motion.button
+              className="scrollToTop-btn"
+              initial={{ y: 100, opacity: 0 }}
+              animate={{ y: 0, opacity: 1, transition: { duration: 0.6 } }}
+              exit={{ y: 100, opacity: 0, transition: { duration: 0.6 } }}
+              whileHover={{
+                scale: 1.1,
+                transition: { duration: 0.2 },
+              }}
+              whileTap={{ scale: 1 }}
+            >
+              {arrowUp}
+            </motion.button>
+          </Link>
+        )}
+      </AnimatePresence>
+    </>
   );
 };
