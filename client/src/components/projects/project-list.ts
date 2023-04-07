@@ -6,8 +6,6 @@ import texterDesk from "../../images/projects/desktop/texter.jpg";
 import texterMob from "../../images/projects/mobile/texter.jpg";
 import swDesk from "../../images/projects/desktop/sw.jpg";
 import swMob from "../../images/projects/mobile/sw.jpg";
-//import gatsbyDesk from "../../images/projects/desktop/gatsby.jpg";
-//import gatsbyMob from "../../images/projects/mobile/gatsby.jpg";
 import codeDesk from "../../images/projects/desktop/code.jpg";
 import codeMob from "../../images/projects/mobile/code.jpg";
 import hangDesk from "../../images/projects/desktop/hangman.jpg";
@@ -22,6 +20,10 @@ import foodieDesk from "../../images/projects/desktop/foodie.jpg";
 import foodieMob from "../../images/projects/mobile/foodie.jpg";
 import blogAiDesk from "../../images/projects/desktop/blog-ai.jpg";
 import blogAiMob from "../../images/projects/mobile/blog-ai.jpg";
+import fibAppDesk from "../../images/projects/desktop/fibapp.jpg";
+import fibAppMob from "../../images/projects/mobile/fibapp.jpg";
+import gatsbyDesk from "../../images/projects/desktop/gatsby.jpg";
+import gatsbyMob from "../../images/projects/mobile/gatsby.jpg";
 
 export const projects1 = [
   {
@@ -63,20 +65,6 @@ export const projects1 = [
 ];
 
 export const projects2 = [
-  /*  {
-    link: "https://gatsbycontentfulcloudclass.gatsbyjs.io/",
-    srcDesk: gatsbyDesk,
-    srcMobile: gatsbyMob,
-    title: "Gatsby Rendered site",
-    desc: "React | Gatsby | Contentful",
-  }, */
-  /*  {
-    link: "https://fib-app.vercel.app/",
-    srcDesk: ...,
-    srcMobile: ...,
-    title: "Fibonacci Calculator",
-    desc: "React | Docker | Node.js | AWS",
-  }, */
   {
     link: "https://texter123-dev.herokuapp.com/",
     srcDesk: texterDesk,
@@ -118,5 +106,22 @@ export const projects2 = [
     srcMobile: famguyMob,
     title: "Family Guy Trivia",
     desc: "Javascript | CSS",
+  },
+];
+
+export const projects3 = [
+  {
+    link: "https://fib-app.vercel.app/",
+    srcDesk: fibAppDesk,
+    srcMobile: fibAppMob,
+    title: "Fibonacci Calculator",
+    desc: "React | Docker | Node.js | AWS",
+  },
+  {
+    link: "https://gatsbycontentfulcloudclass.gatsbyjs.io/",
+    srcDesk: gatsbyDesk,
+    srcMobile: gatsbyMob,
+    title: "Gatsby Rendered site",
+    desc: "React | Gatsby | Contentful",
   },
 ];
