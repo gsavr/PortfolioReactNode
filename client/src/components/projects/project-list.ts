@@ -48,7 +48,7 @@ export const projects1 = [
     desc: "React | Redux Toolkit | Typescript",
   },
   {
-    link: "https://afternoon-mesa-81480.herokuapp.com/",
+    link: "https://trivia-challenge-react.netlify.app/",
     srcDesk: triviaDesk,
     srcMobile: triviaMob,
     title: "Trivia Challenge",
@@ -80,10 +80,10 @@ export const projects2 = [
     desc: "Run on Node env | npx jsnote-gs serve",
   },
   {
-    link: "https://damp-mountain-94831.herokuapp.com/",
+    link: "https://api-sw-planets.netlify.app/",
     srcDesk: swDesk,
     srcMobile: swMob,
-    title: "API Planets",
+    title: "API SW Planets",
     desc: "React | ReduxToolkit | React-Router",
   },
   {
