@@ -83,7 +83,7 @@ export const projects2 = [
     link: "https://damp-mountain-94831.herokuapp.com/",
     srcDesk: swDesk,
     srcMobile: swMob,
-    title: "Star Wars Planets",
+    title: "API Planets",
     desc: "React | ReduxToolkit | React-Router",
   },
   {
