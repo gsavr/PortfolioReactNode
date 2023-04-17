@@ -24,6 +24,10 @@ import fibAppDesk from "../../images/projects/desktop/fibapp.jpg";
 import fibAppMob from "../../images/projects/mobile/fibapp.jpg";
 import gatsbyDesk from "../../images/projects/desktop/gatsby.jpg";
 import gatsbyMob from "../../images/projects/mobile/gatsby.jpg";
+import owlzDesk from "../../images/projects/desktop/owlz.jpg";
+import owlzMob from "../../images/projects/mobile/owlz.jpg";
+import rpgDesk from "../../images/projects/desktop/rpg.jpg";
+import rpgMob from "../../images/projects/mobile/rpg.jpg";
 
 export const projects1 = [
   {
@@ -80,12 +84,30 @@ export const projects2 = [
     desc: "Run on Node env | npx jsnote-gs serve",
   },
   {
+    link: "https://master.d3mg7hl4rh1qll.amplifyapp.com/",
+    srcDesk: fibAppDesk,
+    srcMobile: fibAppMob,
+    title: "Fibonacci Calculator",
+    desc: "React | Docker | Node.js | AWS",
+  },
+  {
     link: "https://api-sw-planets.netlify.app/",
     srcDesk: swDesk,
     srcMobile: swMob,
     title: "API SW Planets",
     desc: "React | ReduxToolkit | React-Router",
   },
+
+  {
+    link: "https://owlz-app.herokuapp.com/",
+    srcDesk: owlzDesk,
+    srcMobile: owlzMob,
+    title: "Owlz App",
+    desc: "React | Node.js | MySQL | ChatKit",
+  },
+];
+
+export const projects3 = [
   {
     link: "https://github.com/gsavr/food-finder-react-native ",
     srcDesk: foodieDesk,
@@ -93,6 +115,14 @@ export const projects2 = [
     title: "Foodie Finder",
     desc: "React Native | Axios",
   },
+  {
+    link: "https://gatsbycontentfulcloudclass.gatsbyjs.io/",
+    srcDesk: gatsbyDesk,
+    srcMobile: gatsbyMob,
+    title: "Gatsby Rendered site",
+    desc: "React | Gatsby | Contentful",
+  },
+
   {
     link: "https://gsavr.github.io/Word-Guess-Game/",
     srcDesk: hangDesk,
@@ -105,23 +135,13 @@ export const projects2 = [
     srcDesk: famguyDesk,
     srcMobile: famguyMob,
     title: "Family Guy Trivia",
-    desc: "Javascript | CSS",
-  },
-];
-
-export const projects3 = [
-  {
-    link: "https://fib-app.vercel.app/",
-    srcDesk: fibAppDesk,
-    srcMobile: fibAppMob,
-    title: "Fibonacci Calculator",
-    desc: "React | Docker | Node.js | AWS",
+    desc: "JQuery | CSS",
   },
   {
-    link: "https://gatsbycontentfulcloudclass.gatsbyjs.io/",
-    srcDesk: gatsbyDesk,
-    srcMobile: gatsbyMob,
-    title: "Gatsby Rendered site",
-    desc: "React | Gatsby | Contentful",
+    link: "https://gsavr.github.io/sw-rpg/",
+    srcDesk: rpgDesk,
+    srcMobile: rpgMob,
+    title: "RPG Game",
+    desc: "JQuery | CSS",
   },
 ];

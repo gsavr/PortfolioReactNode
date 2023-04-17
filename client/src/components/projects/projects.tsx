@@ -1,8 +1,25 @@
-import { projects1, projects2 } from "./project-list";
+import { useState } from "react";
+import { projects1, projects2, projects3 } from "./project-list";
 import { motion } from "framer-motion";
 import { animateH1, animatePic } from "../animation";
+import {
+  Accordion,
+  AccordionHeader,
+  AccordionBody,
+} from "@material-tailwind/react";
 
 export const Projects: React.FC = () => {
+  const [open, setOpen] = useState(0);
+
+  const handleOpen = (value: number) => {
+    setOpen(open === value ? 0 : value);
+  };
+
+  const customAnimation = {
+    mount: { scale: 1 },
+    unmount: { scale: 0.9 },
+  };
+
   const renderProjectRow = (
     list: {
       link: string;
@@ -59,14 +76,38 @@ export const Projects: React.FC = () => {
             projects
           </motion.h1>
         </div>
-
         {/*  Items Container row 1  */}
         <div className={`item-container`}>{renderProjectRow(projects1)}</div>
         {/*  Items Container row 2  */}
-        {/* Adjust text size when displaying 6 projects - with 5 - leave */}
+        {/* Adjust text size when displaying 6 projects (md:text-base lg:text-xl) - with 5 - leave blank*/}
         <div className={`item-container mt-6 md:mt-10 md:text-base lg:text-xl`}>
           {renderProjectRow(projects2)}
         </div>
+
+        <Accordion
+          open={open === 1}
+          animate={customAnimation}
+          nonce={undefined}
+          onResize={undefined}
+          onResizeCapture={undefined}
+        >
+          <AccordionHeader
+            onClick={() => handleOpen(1)}
+            className="-mb-2 border-none pb-0 text-primary hover:text-secondary"
+            nonce={undefined}
+            onResize={undefined}
+            onResizeCapture={undefined}
+          >
+            <div className="py-1">More</div>
+          </AccordionHeader>
+          <AccordionBody className="pb-0">
+            <div
+              className={`item-container mt-2 md:mt-2 md:text-base lg:text-xl`}
+            >
+              {renderProjectRow(projects3)}
+            </div>
+          </AccordionBody>
+        </Accordion>
       </div>
     </div>
   );
