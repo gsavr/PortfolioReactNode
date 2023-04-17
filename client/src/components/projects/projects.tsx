@@ -102,7 +102,7 @@ export const Projects: React.FC = () => {
           </AccordionHeader>
           <AccordionBody className="pb-0">
             <div
-              className={`item-container mt-2 md:mt-2 md:text-base lg:text-xl`}
+              className={`item-container mt-2 md:mt-3 md:text-base lg:text-xl`}
             >
               {renderProjectRow(projects3)}
             </div>
