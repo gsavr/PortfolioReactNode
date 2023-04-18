@@ -17,7 +17,7 @@ export const Projects: React.FC = () => {
 
   const customAnimation = {
     mount: { scale: 1 },
-    unmount: { scale: 0.9 },
+    unmount: { scale: 0.6 },
   };
 
   const renderProjectRow = (
