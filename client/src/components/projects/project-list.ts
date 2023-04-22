@@ -31,7 +31,7 @@ import rpgMob from "../../images/projects/mobile/rpg.jpg";
 
 export const projects1 = [
   {
-    link: "https://blogger-gs.herokuapp.com/",
+    link: "https://master.d3h3t6b4nsoxri.amplifyapp.com/",
     srcDesk: blogAiDesk,
     srcMobile: blogAiMob,
     title: "Blogger Open-AI",
