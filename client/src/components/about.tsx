@@ -59,10 +59,12 @@ export const About: React.FC = () => {
               user.
             </p>
             <p className="text-md md:text-lg">
-              I intend to use my design, development and other skills while
+              I aim to use my design, development and other skills while
               continuously advancing my skill set through additional programming
               and career development to remain at the forefront of an
-              ever-changing technology landscape.
+              ever-changing technology landscape. In my free time, I am
+              continuously learning new technologies and building projects, I
+              also like to read fiction and travel.
             </p>
           </motion.div>
         </div>
