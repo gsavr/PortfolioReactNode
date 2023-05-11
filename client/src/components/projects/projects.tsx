@@ -92,24 +92,15 @@ export const Projects: React.FC = () => {
           onResize={undefined}
           onResizeCapture={undefined}
         >
-          <motion.div
-            initial={"offscreen"}
-            whileInView={"onscreen"}
-            viewport={{ once: true }}
-            variants={animatePic}
+          <AccordionHeader
+            onClick={() => handleOpen(1)}
+            className="-mb-2 border-none pb-0 text-primary hover:text-secondary"
+            nonce={undefined}
+            onResize={undefined}
+            onResizeCapture={undefined}
           >
-            <AccordionHeader
-              onClick={() => handleOpen(1)}
-              className={`-mb-2 border-0 border-b-[#8AD8BC]/40 border-b-${
-                open === 0 ? "2" : "0"
-              } pb-0 text-primary hover:text-secondary`}
-              nonce={undefined}
-              onResize={undefined}
-              onResizeCapture={undefined}
-            >
-              <div className="py-1">More</div>
-            </AccordionHeader>
-          </motion.div>
+            <div className="py-1">More</div>
+          </AccordionHeader>
           <AccordionBody className="pb-0">
             <div
               className={`item-container mt-2 md:mt-3 md:text-base lg:text-xl`}
