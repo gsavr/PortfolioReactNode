@@ -97,12 +97,13 @@ export const Projects: React.FC = () => {
             whileInView={"onscreen"}
             viewport={{ once: true }}
             variants={animatePic}
+            className={`border-0 border-b-[#8AD8BC]/40 border-b-${
+              open === 0 ? "2" : "0"
+            } pb-${open === 0 ? "2" : "0"}`}
           >
             <AccordionHeader
               onClick={() => handleOpen(1)}
-              className={`-mb-2 border-0 border-b-[#8AD8BC]/40 border-b-${
-                open === 0 ? "2" : "0"
-              } pb-0 text-primary hover:text-secondary`}
+              className={`-mb-2 border-0 pb-0 text-primary hover:text-secondary`}
               nonce={undefined}
               onResize={undefined}
               onResizeCapture={undefined}
