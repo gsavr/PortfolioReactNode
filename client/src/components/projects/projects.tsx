@@ -100,7 +100,7 @@ export const Projects: React.FC = () => {
           >
             <AccordionHeader
               onClick={() => handleOpen(1)}
-              className={` -mb-2 border-0 border-[#E4E7EB] border-b-${
+              className={`-mb-2 border-0 border-b-[#8AD8BC]/40 border-b-${
                 open === 0 ? "2" : "0"
               } pb-0 text-primary hover:text-secondary`}
               nonce={undefined}
