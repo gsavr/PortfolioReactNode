@@ -84,6 +84,7 @@ export const Projects: React.FC = () => {
           {renderProjectRow(projects2)}
         </div>
 
+        {/* hidden accordion rows */}
         <Accordion
           open={open === 1}
           animate={customAnimation}
