@@ -45,7 +45,7 @@ export const projects1 = [
     desc: "React | Node.js | Redux | GoogleAuth",
   },
   {
-    link: "https://movie-search-gs.netlify.app/",
+    link: "https://movie-search-gsavr.vercel.app/",
     srcDesk: moviesDesk,
     srcMobile: moviesMob,
     title: "Movie Search",
