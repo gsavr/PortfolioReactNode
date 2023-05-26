@@ -38,7 +38,7 @@ export const projects1 = [
     desc: "Next.js | OpenAI API | MongoDB | Auth-0", //
   },
   {
-    link: "https://glacial-sands-58335.herokuapp.com/",
+    link: "https://emailman.herokuapp.com/",
     srcDesk: emailDesk,
     srcMobile: emailMob,
     title: "Emailer",
