@@ -5,7 +5,7 @@ export const projects1 = [
     link: "https://chatty-ai-kappa.vercel.app/",
     srcDesk: img.chatAiDesk,
     srcMobile: img.chatAiMob,
-    title: "Chatty AI",
+    title: "AI Chat",
     desc: "Next.js | OpenAI API | MongoDB | Auth-0", //
   },
   {
@@ -16,11 +16,11 @@ export const projects1 = [
     desc: "React | Node.js | Apollo GraphQL | Prisma",
   },
   {
-    link: "https://master.d3h3t6b4nsoxri.amplifyapp.com/",
-    srcDesk: img.blogAiDesk,
-    srcMobile: img.blogAiMob,
-    title: "Blogger Open-AI",
-    desc: "Next.js | OpenAI API | MongoDB | Auth-0", //
+    link: "https://lynk-chat.vercel.app/",
+    srcDesk: img.lynkChatDesk,
+    srcMobile: img.lynkChatMob,
+    title: "Group Chat",
+    desc: "Next.js | GraphQL | Apollo | Grafbase", //
   },
   {
     link: "https://emailman.herokuapp.com/",
@@ -39,6 +39,13 @@ export const projects1 = [
 ];
 
 export const projects2 = [
+  {
+    link: "https://master.d3h3t6b4nsoxri.amplifyapp.com/",
+    srcDesk: img.blogAiDesk,
+    srcMobile: img.blogAiMob,
+    title: "Blogger Open-AI",
+    desc: "Next.js | OpenAI API | MongoDB | Auth-0", //
+  },
   {
     link: "https://trivia-challenge-react.netlify.app/",
     srcDesk: img.triviaDesk,
@@ -68,6 +75,9 @@ export const projects2 = [
     title: "Code & Text Editor",
     desc: "Run on Node env | npx jsnote-gs serve",
   },
+];
+
+export const projects3 = [
   {
     link: "https://master.d3mg7hl4rh1qll.amplifyapp.com/",
     srcDesk: img.fibAppDesk,
@@ -75,16 +85,13 @@ export const projects2 = [
     title: "Fibonacci Calculator",
     desc: "React | Docker | Node.js | AWS",
   },
-];
-
-export const projects3 = [
-  {
+  /* {
     link: "https://api-sw-planets.netlify.app/",
     srcDesk: img.swDesk,
     srcMobile: img.swMob,
     title: "API SW Planets",
     desc: "React | ReduxToolkit | React-Router",
-  },
+  }, */
 
   {
     link: "https://owlz-app.herokuapp.com/",

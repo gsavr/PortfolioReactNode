@@ -32,6 +32,8 @@ import chatAiDesk from "../../images/projects/desktop/chat-ai.jpg";
 import chatAiMob from "../../images/projects/mobile/chat-ai.jpg";
 import bookMgrDesk from "../../images/projects/desktop/book-mngr.jpg";
 import bookMgrMob from "../../images/projects/mobile/book-mngr.jpg";
+import lynkChatDesk from "../../images/projects/desktop/lynk-chat.jpg";
+import lynkChatMob from "../../images/projects/mobile/lynk-chat.jpg";
 
 export const img = {
   emailDesk,
@@ -68,4 +70,6 @@ export const img = {
   chatAiMob,
   bookMgrDesk,
   bookMgrMob,
+  lynkChatDesk,
+  lynkChatMob,
 };

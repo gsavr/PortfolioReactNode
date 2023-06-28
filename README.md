@@ -5,6 +5,7 @@
 - React
 - Typescript
 - Tailwind CSS
+- Framer Motion
 
 ### Live site
 
