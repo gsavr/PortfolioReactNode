@@ -3,7 +3,7 @@
 }
 
 .item {
-  @apply relative overflow-hidden shadow-2xl md:w-1/4;
+  @apply relative overflow-hidden rounded shadow-2xl md:w-1/4;
 }
 
 .item-gradient {

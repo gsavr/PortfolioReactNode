@@ -64,7 +64,7 @@ export const Contact: React.FC = () => {
               variants={animatefromBottom}
               className="w-full px-4 lg:w-8/12"
             >
-              <div className="relative bg-primary p-8 shadow-2xl dark:bg-[#465162] sm:p-12">
+              <div className="relative rounded bg-primary p-8 shadow-2xl dark:bg-[#465162] sm:p-12">
                 <form
                   onSubmit={(e: React.FormEvent<HTMLFormElement>) =>
                     handleSubmit(e)
@@ -113,9 +113,10 @@ export const Contact: React.FC = () => {
                     <button
                       type="submit"
                       className={`form-button  ${
-                        sending ? "bg-[#8bd8bd] shadow-2xl" : "bg-[#243665]"
+                        sending ? "bg-[#8bd8bd] shadow-2xl" : "bg-[#5B7D83]"
                       }`}
                     >
+                      {/* old color button bg-[#243665] */}
                       {sending ? (
                         <>
                           <Spinner /> Sending ...

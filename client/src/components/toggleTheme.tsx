@@ -28,8 +28,9 @@ export const ToggleTheme = () => {
         <button
           id="light-mode-button"
           onClick={changeTheme}
-          className="rounded-full bg-gray-400 p-2.5 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-transparent dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-transparent"
+          className="rounded-full bg-[#5B7D83] p-2.5 text-sm text-gray-700 hover:bg-gray-100 focus:outline-none focus:ring-transparent dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-transparent"
         >
+          {/* old for light-mode-button bg-gray-400 text-gray-500 */}
           <svg
             id="theme-toggle-light-icon"
             className="h-6 w-6 md:h-7 md:w-7"
