@@ -43,7 +43,7 @@ export const Contact: React.FC = () => {
         </motion.h1>
       </div>
       <Modal open={open} setOpen={setOpen} />
-      <div className="relative z-10 overflow-x-hidden bg-secondary pt-0 pb-20 md:pt-10 lg:py-12">
+      <div className="relative z-10 overflow-x-hidden overflow-y-hidden bg-secondary pt-0 pb-20 md:pt-10 lg:py-12">
         <div className="container mx-auto mt-10 mb-0 max-w-6xl px-6 pb-10 md:px-8">
           <div className="-mx-4 flex flex-wrap lg:justify-between">
             <div className="w-full px-4 lg:w-4/12 ">
@@ -113,7 +113,7 @@ export const Contact: React.FC = () => {
                     <button
                       type="submit"
                       className={`form-button  ${
-                        sending ? "bg-[#8bd8bd] shadow-2xl" : "bg-[#5B7D83]"
+                        sending ? "bg-[#8bd8bd] shadow-2xl" : "bg-[#638A90]"
                       }`}
                     >
                       {/* old color button bg-[#243665] */}
