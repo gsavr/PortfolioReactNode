@@ -5,8 +5,9 @@ import { Link } from "react-scroll";
 
 export const Footer = () => {
   return (
-    <footer className="bg-[#252c38] text-white">
+    <footer className="bg-[#122429] text-white dark:bg-[#252c38]">
       <div className="container relative mx-auto px-5 md:pb-10 md:pt-12">
+        {/* UP arrows at top of footer */}
         <Link to="hero" className="up-button cursor-pointer">
           <img src={arrows} alt="" className="up-arrow h-16 w-16" />
         </Link>
