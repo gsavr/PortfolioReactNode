@@ -64,6 +64,7 @@ export const NavBar: React.FC = () => {
           </a>
           <div className="mx-2 transition duration-300 group-hover:border-b group-hover:border-[#8bd8bd]"></div>
         </div>
+        {/* Position for toggle theme buttton in mobile is located in hamburger button */}
         <div className="group">
           <ToggleTheme />
         </div>
