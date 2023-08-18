@@ -10,9 +10,6 @@ export const HamburgerButton: React.FC<HamburgerButtonProps> = (props) => {
 
   return (
     <div className="flex items-center md:hidden">
-      <div className="pb-2 pr-5">
-        <ToggleTheme />
-      </div>
       <button
         id="menu-btn"
         onClick={openMobileMenu}
@@ -23,6 +20,10 @@ export const HamburgerButton: React.FC<HamburgerButtonProps> = (props) => {
         <span className="hamburger-middle bg-black dark:bg-white"></span>
         <span className="hamburger-bottom bg-black dark:bg-white"></span>
       </button>
+      {/* mobile dark theme toggle */}
+      <div className="pt-0 pr-0">
+        <ToggleTheme />
+      </div>
     </div>
   );
 };

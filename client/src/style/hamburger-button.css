@@ -13,8 +13,8 @@
   position: absolute;
   width: 24px;
   height: 2px;
-  top: 0;
-  left: 0;
+  top: 4px;
+  right: 10px;
   /*  background: #fff; */
   transform: rotate(0);
   /*all transitional properties*/
@@ -29,8 +29,11 @@
   transform: translateY(14px);
 }
 
+/* top and right are to place the hamburger button when open */
 .open {
   transform: rotate(90deg);
+  top: 8px;
+  right: 10px;
 }
 
 .open .hamburger-top {

@@ -46,7 +46,7 @@ export const NavBar: React.FC = () => {
   };
 
   return (
-    <nav className="flex items-center justify-between font-bold text-primary transition-all duration-1500">
+    <nav className="flex items-center justify-between rounded-full bg-[#E0ECEF]/40 font-bold text-black transition-all duration-1500 dark:bg-[#63686A]/80 dark:text-primary">
       {/* Logo  */}
       <Logo />
       {/*  Menu */}
@@ -64,6 +64,7 @@ export const NavBar: React.FC = () => {
           </a>
           <div className="mx-2 transition duration-300 group-hover:border-b group-hover:border-[#8bd8bd]"></div>
         </div>
+        {/* Position for toggle theme buttton in mobile is located in hamburger button */}
         <div className="group">
           <ToggleTheme />
         </div>
