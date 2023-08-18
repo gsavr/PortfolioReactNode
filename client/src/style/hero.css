@@ -1,5 +1,6 @@
 .hero-bg {
-  background-attachment: fixed;
+  /*  background-position-x: -900px; */
+
   @apply bg-giodesk bg-cover bg-center bg-no-repeat;
 }
 

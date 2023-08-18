@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { ParallaxBanner, ParallaxBannerLayer } from "react-scroll-parallax";
-import { isMobile } from "react-device-detect";
+import { isMobile, isIPad13 } from "react-device-detect";
 import { NavBar } from "./navBar";
 import { Link } from "react-scroll";
 
@@ -9,7 +9,10 @@ export const Hero: React.FC = () => {
     <ParallaxBanner id="hero">
       {/* each BannerLayer is a complete div taking up the screen, each subsequent goes on top of the last */}
       {/* hero background only */}
-      <ParallaxBannerLayer className="hero-bg" speed={-30} />
+      <ParallaxBannerLayer
+        className="hero-bg"
+        speed={isMobile && !isIPad13 ? -10 : -30}
+      />
       {/* gradient on top of image layer */}
       <ParallaxBannerLayer className="gradient-bg" speed={20} />
       {/* welcome banner   ----  navbar at last place - it needs to be on top */}
