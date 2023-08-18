@@ -21,6 +21,16 @@ module.exports = {
         1500: "1500ms",
         2000: "2000ms",
       },
+      backgroundImage: {
+        giodesk: "url(/src/images/gio1.jpg)",
+        gioai: "url(/src/images/gio2.png)",
+      },
+      backgroundSize: {
+        auto: "auto",
+        cover: "cover",
+        contain: "contain",
+        bigger: "150%",
+      },
       /* backgroundImage: (theme) => ({
         "logo-dark-mode": "url('../images/GS_Logo_dark')",
         "logo-light-mode": "url('../images/GS_Logo_light')",
