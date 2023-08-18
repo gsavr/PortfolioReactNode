@@ -25,8 +25,10 @@ export const Hero: React.FC = () => {
               transition={{ type: "spring", duration: 2, bounce: 0.3 }}
             >
               <div className={`hero-box`}>
-                Welcome to{""}
-                <br />
+                <p className="pb-3 text-2xl md:pb-6 md:text-5xl lg:pb-7">
+                  Welcome {"</>"}
+                </p>
+
                 <p
                   className={`text-4xl text-black transition-all duration-1000 dark:text-primary md:text-6xl ${
                     !isMobile && "lg:group-hover:text-[4rem]"
@@ -34,7 +36,7 @@ export const Hero: React.FC = () => {
                 >
                   Giorgio Savron
                 </p>
-                <p>Developer Services</p>
+                <p>Full Stack Developer</p>
               </div>
             </motion.div>
             <motion.div
