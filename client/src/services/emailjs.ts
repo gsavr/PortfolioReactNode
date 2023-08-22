@@ -1,7 +1,4 @@
 import emailjs from "@emailjs/browser";
-// const keys = require("../config/keys");
-
-// const { serviceId, templateId, emailjsKey } = keys;
 
 export const sendEmail = async (
   name: string,

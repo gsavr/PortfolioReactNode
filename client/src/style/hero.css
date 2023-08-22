@@ -1,9 +1,8 @@
 .hero-bg {
-  @apply bg-giodesk bg-cover bg-center bg-no-repeat;
+  @apply bg-giodesk bg-cover bg-fixed bg-center bg-no-repeat;
 }
 
 .gradient-bg {
-  background-image: url("../images/bg.jpeg");
   @apply top-0 bottom-0 right-0 left-0 bg-gradient-to-r from-[#63686A]/60 to-[#506E73]/70 dark:from-gray-600/70 dark:to-gray-800/80;
 }
 /*OLD COLOR: to-gray-500 */
