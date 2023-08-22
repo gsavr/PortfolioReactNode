@@ -1,15 +1,41 @@
-import { motion } from "framer-motion";
+import { useRef } from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
 import { NavBar } from "./navBar";
 import { Link } from "react-scroll";
 
 export const Hero: React.FC = () => {
+  const ref = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    // offset - starts when start of element meets start of viewport - ends when end of element meets start of viewport
+    offset: ["start start", "end start"],
+  });
+  //checks scroll - at value 0 we want to be at 0%, at value 1, we want to be at 100%
+  const backgroundY = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
+  const backgroundFrontY = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
+  const boxesY = useTransform(scrollYProgress, [0, 1], ["0%", "90%"]);
+
   return (
-    <div id="hero" className="hero hero-bg overflow-x-hidden">
-      <div className="gradient-bg">
-        <div className="container mx-auto flex min-h-screen max-w-6xl flex-col px-6 py-12">
+    <div id="hero" ref={ref} className="hero relative overflow-hidden">
+      {/* background full image */}
+      <motion.div
+        style={{ y: backgroundY }}
+        className="hero-bg absolute inset-0 z-0"
+      />
+      {/* background w/o view */}
+      <motion.div
+        style={{ y: backgroundFrontY }}
+        className="hero-bg-front absolute inset-0 z-10"
+      />
+      {/* gradient for top of image - will not have parallax effect */}
+      <div className="gradient-bg relative z-20">
+        <div className="container z-30 mx-auto flex min-h-screen max-w-6xl flex-col px-6 py-12">
           <NavBar />
 
-          <div className="group flex flex-1 flex-col items-center justify-center lg:flex-row lg:justify-between">
+          <motion.div
+            style={{ y: boxesY }}
+            className="group flex flex-1 flex-col items-center justify-center lg:flex-row lg:justify-between"
+          >
             <motion.div
               initial={{ opacity: 0, x: "-35vw" }}
               animate={{ opacity: 1, x: 0 }}
@@ -34,7 +60,7 @@ export const Hero: React.FC = () => {
                 <p>Enter</p>
               </Link>
             </motion.div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>

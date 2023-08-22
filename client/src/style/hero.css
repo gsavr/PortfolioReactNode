@@ -1,5 +1,9 @@
 .hero-bg {
-  @apply bg-giodesk bg-cover bg-fixed bg-center bg-no-repeat;
+  @apply bg-giodesk bg-cover bg-center;
+}
+
+.hero-bg-front {
+  @apply bg-giofront bg-cover bg-center;
 }
 
 .gradient-bg {
