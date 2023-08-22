@@ -7,7 +7,7 @@ export const Hero: React.FC = () => {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
-    // offset - starts when start of element meets start of viewport - ends when end of element meets start of viewport
+    // offset - starts when start of element meets top(start) of viewport - ends when end of element meets top(start) of viewport
     offset: ["start start", "end start"],
   });
   //add spring effect

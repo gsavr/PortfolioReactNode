@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import photo from "../images/me.jpg";
 import { Skills } from "./skills/skills";
 import { motion } from "framer-motion";
@@ -10,8 +11,10 @@ import {
 //import { Link } from "react-scroll";
 
 export const About: React.FC = () => {
+  const skillsRef = useRef(null);
+
   return (
-    <div id="about" className="overflow-x-hidden">
+    <div id="about" ref={skillsRef} className="overflow-x-hidden">
       {/*  About Me Container  */}
       <motion.h1
         initial={"offscreen"}
@@ -84,7 +87,7 @@ export const About: React.FC = () => {
           <h2 className="max-w-md text-xl font-bold uppercase md:text-4xl">
             Skills:
           </h2>
-          <Skills />
+          <Skills skillsRef={skillsRef} />
         </motion.div>
 
         {/*  Link  */}
