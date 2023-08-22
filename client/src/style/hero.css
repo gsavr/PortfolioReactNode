@@ -8,9 +8,9 @@
 /*OLD COLOR: to-gray-500 */
 
 .hero-box {
-  @apply mt-32 max-w-2xl rounded border-2 bg-[#E0ECEF]/40 p-4 text-3xl uppercase text-primary transition-all duration-1000 hover:text-slate-400 dark:bg-transparent dark:hover:text-slate-500 md:m-16 md:mx-0 md:p-10 md:text-5xl md:leading-normal;
+  @apply -mt-20 max-w-2xl rounded border-2 bg-[#E0ECEF]/40 p-4 text-3xl uppercase text-primary transition-all duration-1000 hover:text-slate-400 dark:bg-transparent dark:hover:text-slate-500 md:m-16 md:mx-0 md:p-10 md:text-5xl md:leading-normal;
 }
 
 .hero-enter-button {
-  @apply mt-32 flex max-w-md cursor-pointer items-center justify-center rounded border-2 bg-[#E0ECEF]/40 p-4 text-4xl uppercase text-black transition-all duration-1000 hover:scale-110 hover:rounded-full dark:bg-transparent dark:text-primary md:m-16 md:mx-0 md:h-72  md:p-10 md:text-6xl md:leading-normal;
+  @apply mt-10 flex max-w-md cursor-pointer items-center justify-center rounded border-2 bg-[#E0ECEF]/40 p-4 text-4xl uppercase text-black transition-all duration-1000 hover:scale-110 hover:rounded-full dark:bg-transparent dark:text-primary md:m-16 md:mx-0 md:h-72  md:p-10 md:text-6xl md:leading-normal;
 }
