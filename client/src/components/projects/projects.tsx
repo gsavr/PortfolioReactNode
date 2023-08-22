@@ -63,7 +63,7 @@ export const Projects: React.FC = () => {
   };
 
   return (
-    <div id="projects" className="overflow-x-hidden">
+    <div id="projects" className="overflow-hidden">
       <div className="container mx-auto mt-10 max-w-6xl px-6 pb-10 md:mb-32 md:px-8">
         {/*  Projects header  */}
         <div className="mb-6 flex justify-center md:mb-20">

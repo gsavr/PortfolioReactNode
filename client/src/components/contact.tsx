@@ -1,11 +1,11 @@
-import circleG from "../images/circle-g.svg";
-import circleB from "../images/circle-b.svg";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { sendEmail } from "../services/emailjs";
 import { Modal } from "./modal";
-import { motion } from "framer-motion";
-import { animateH1, animatefromBottom } from "./animation";
+import { motion, useScroll, useSpring, useTransform } from "framer-motion";
+import { animateH1 /* animatefromBottom */ } from "./animation";
 import { Spinner } from "./spinner";
+import circleG from "../images/circle-g.svg";
+import circleB from "../images/circle-b.svg";
 
 export const Contact: React.FC = () => {
   const [name, setName] = useState("");
@@ -14,6 +14,26 @@ export const Contact: React.FC = () => {
   const [message, setMessage] = useState("");
   const [sending, setSending] = useState(false);
   const [open, setOpen] = useState(false);
+
+  const contactRef = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: contactRef,
+    // offset - starts when start of element meets bottom(end) of viewport - ends when start of element meets top(start) of viewport
+    offset: ["start end", "start start"],
+  });
+  //add spring effect
+  const scrollYspring = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 40,
+    restDelta: 0.00001,
+  });
+  // starts at 50% of viewport, ends at 80%
+  const formY = useTransform(scrollYspring, [0.1, 0.6], ["80%", "0%"]);
+  const writeMeOpacity = useTransform(
+    scrollYspring,
+    [0.5, 0.9],
+    ["0%", "100%"]
+  );
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -30,7 +50,7 @@ export const Contact: React.FC = () => {
   };
 
   return (
-    <div id="contact">
+    <div id="contact" ref={contactRef}>
       <div className={`bg-secondary`}>
         <motion.h1
           initial={"offscreen"}
@@ -51,19 +71,16 @@ export const Contact: React.FC = () => {
                 <h2 className="mb-6 text-[28px] font-bold uppercase text-primary sm:text-[40px] lg:text-[36px] xl:text-[40px]">
                   LET'S GET IN TOUCH
                 </h2>
-                <div className="mb-9 text-2xl uppercase leading-relaxed text-secondary">
+                <motion.div
+                  style={{ opacity: writeMeOpacity }}
+                  className="mb-9 text-2xl uppercase leading-relaxed text-secondary"
+                >
                   <p> Have a question?</p> <p>Want to work with me?</p>{" "}
                   <p>Write me a note!</p>
-                </div>
+                </motion.div>
               </div>
             </div>
-            <motion.div
-              initial={"offscreen"}
-              whileInView={"onscreen"}
-              viewport={{ once: true, amount: 0 }}
-              variants={animatefromBottom}
-              className="w-full px-4 lg:w-8/12"
-            >
+            <motion.div className="w-full px-4 lg:w-8/12" style={{ y: formY }}>
               <div className="relative rounded bg-primary p-8 shadow-2xl dark:bg-[#465162] sm:p-12">
                 <form
                   onSubmit={(e: React.FormEvent<HTMLFormElement>) =>
