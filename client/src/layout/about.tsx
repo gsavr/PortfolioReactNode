@@ -1,13 +1,13 @@
 import { useRef } from "react";
 import photo from "../images/me.jpg";
-import { Skills } from "./skills/skills";
+import { Skills } from "./skills";
 import { motion, useScroll, useTransform } from "framer-motion";
 import {
   animateH1,
   animatePic,
   animatefromLeft,
   animatefromRight,
-} from "./animation";
+} from "../assets/animation";
 //import { Link } from "react-scroll";
 
 export const About: React.FC = () => {

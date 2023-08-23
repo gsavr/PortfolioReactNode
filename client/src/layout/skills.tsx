@@ -6,7 +6,7 @@ import {
   skills4,
   skills5,
   skills6,
-} from "./skills-list";
+} from "../assets/skills-list";
 import {
   MotionValue,
   motion,

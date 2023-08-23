@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { projects1, projects2, projects3 } from "./project-list";
+import { projects1, projects2, projects3 } from "../assets/project-list";
 import { motion } from "framer-motion";
-import { animateH1, animatePic } from "../animation";
+import { animateH1, animatePic } from "../assets/animation";
 import {
   Accordion,
   AccordionHeader,

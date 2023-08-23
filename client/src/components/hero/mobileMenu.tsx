@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { Link } from "react-scroll";
-import { links, resumeLink } from "./links";
+import { links, resumeLink } from "../../assets/links";
 
 interface MobileMenuProps {
   open: string;
