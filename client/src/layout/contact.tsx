@@ -1,9 +1,9 @@
 import { useRef, useState } from "react";
 import { sendEmail } from "../services/emailjs";
-import { Modal } from "./modal";
+import { Modal } from "../components/modal";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
-import { animateH1 /* animatefromBottom */ } from "./animation";
-import { Spinner } from "./spinner";
+import { animateH1 /* animatefromBottom */ } from "../assets/animation";
+import { Spinner } from "../components/spinner";
 import circleG from "../images/circle-g.svg";
 import circleB from "../images/circle-b.svg";
 

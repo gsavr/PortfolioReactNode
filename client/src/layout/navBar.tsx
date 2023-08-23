@@ -1,10 +1,10 @@
 import { useState } from "react";
-import { ToggleTheme } from "../toggleTheme";
-import { Logo } from "./logo";
-import { HamburgerButton } from "./hamburgerButton";
-import { MobileMenu } from "./mobileMenu";
+import { ToggleTheme } from "../components/toggleTheme";
+import { Logo } from "../components/hero/logo";
+import { HamburgerButton } from "../components/hero/hamburgerButton";
+import { MobileMenu } from "../components/hero/mobileMenu";
 import { Link } from "react-scroll";
-import { links, resumeLink } from "./links";
+import { links, resumeLink } from "../assets/links";
 
 export const NavBar: React.FC = () => {
   const [open, setOpen] = useState("closed");
