@@ -3,7 +3,7 @@ import githubC from "../images/github-c.png";
 import linkedin from "../images/linkedin.png";
 import { Link } from "react-scroll";
 
-export const Footer = () => {
+export const Footer: React.FC = () => {
   return (
     <footer className="bg-[#122429] text-white dark:bg-[#252c38]">
       <div className="container relative mx-auto px-5 md:pb-10 md:pt-12">

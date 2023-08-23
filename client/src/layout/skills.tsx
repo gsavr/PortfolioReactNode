@@ -19,7 +19,8 @@ interface SkillsProps {
   skillsRef: MutableRefObject<null>;
 }
 
-export const Skills: React.FC<SkillsProps> = ({ skillsRef }) => {
+export const Skills: React.FC<SkillsProps> = (props) => {
+  const { skillsRef } = props;
   const { scrollYProgress } = useScroll({
     target: skillsRef,
     // offset - starts when start of element meets top(start) of viewport - ends when end of element meets top(start) of viewport
@@ -31,7 +32,7 @@ export const Skills: React.FC<SkillsProps> = ({ skillsRef }) => {
     damping: 40,
     restDelta: 0.0001,
   });
-
+  // length of distance each group will move
   const xLeft55 = useTransform(scrollYspring, [0.25, 0.5], ["0vw", "-55vw"]);
   const xRight55 = useTransform(scrollYspring, [0.25, 0.5], ["0vw", "55vw"]);
   const xLeft50 = useTransform(scrollYspring, [0.3, 0.5], ["0vw", "-50vw"]);
@@ -60,6 +61,7 @@ export const Skills: React.FC<SkillsProps> = ({ skillsRef }) => {
       return (
         <div
           className={`w-"1/3" flex flex-col items-center transition-all duration-500`}
+          key={src}
         >
           <img
             src={src}

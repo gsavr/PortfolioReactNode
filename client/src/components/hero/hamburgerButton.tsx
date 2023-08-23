@@ -1,7 +1,7 @@
 import { ToggleTheme } from "../toggleTheme";
 
 interface HamburgerButtonProps {
-  open: string;
+  open: string | undefined;
   openMobileMenu: () => void;
 }
 
@@ -14,7 +14,7 @@ export const HamburgerButton: React.FC<HamburgerButtonProps> = (props) => {
         id="menu-btn"
         onClick={openMobileMenu}
         type="button"
-        className={`${open} hamburger z-40 block focus:outline-none md:hidden`}
+        className={`${open} hamburger z-[60] block focus:outline-none md:hidden`}
       >
         <span className="hamburger-top bg-black dark:bg-white"></span>
         <span className="hamburger-middle bg-black dark:bg-white"></span>

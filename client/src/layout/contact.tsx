@@ -70,7 +70,7 @@ export const Contact: React.FC = () => {
             <div className="w-full px-4 lg:w-4/12 ">
               <div className="mb-12 max-w-[570px] lg:mb-0">
                 <h2 className="mb-6 text-[28px] font-bold uppercase text-primary sm:text-[40px] lg:text-[36px] xl:text-[40px]">
-                  LET'S GET IN TOUCH
+                  LET'S CONNECT
                 </h2>
                 <motion.div
                   style={{ opacity: writeMeOpacity }}

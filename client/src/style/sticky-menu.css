@@ -3,7 +3,7 @@
 }
 
 .scrollToTop-btn {
-  @apply fixed bottom-3 right-3 flex h-14 w-14 cursor-pointer items-center justify-center rounded-full border-none bg-secondary bg-opacity-40 text-secondary hover:bg-[#81c9b0] hover:text-slate-100 dark:hover:text-slate-700 lg:bottom-14 lg:right-12;
+  @apply fixed bottom-3 right-3 flex h-14 w-14 cursor-pointer items-center justify-center rounded-full border-none bg-secondary bg-opacity-40 text-secondary shadow-lg hover:bg-[#81c9b0] hover:text-slate-100 dark:hover:text-slate-700 lg:bottom-14 lg:right-12;
   z-index: 999;
   font-size: 16px;
   line-height: 48px;
