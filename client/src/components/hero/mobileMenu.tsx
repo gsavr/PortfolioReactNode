@@ -1,9 +1,10 @@
 import { useEffect } from "react";
 import { Link } from "react-scroll";
+import { Link as RouterLink } from "react-router-dom";
 import { links, resumeLink } from "../../assets/links";
 
 interface MobileMenuProps {
-  open: string;
+  open: string | undefined;
   openMobileMenu: () => void;
   opening: string;
 }
@@ -41,7 +42,7 @@ export const MobileMenu: React.FC<MobileMenuProps> = (props) => {
   return (
     <>
       {open === "open" && (
-        <div id="menu" className={`${opening} mobile-menu`}>
+        <div id="mobile-menu" className={`${opening} mobile-menu z-50`}>
           <>
             <Link
               to="hero"
@@ -51,14 +52,14 @@ export const MobileMenu: React.FC<MobileMenuProps> = (props) => {
               Home
             </Link>
             {renderLinks()}
-            <a
-              href={resumeLink.link}
-              target="_blank"
-              rel="noreferrer"
+            <RouterLink
+              to={resumeLink.link}
+              // target="_blank"
+              // rel="noreferrer"
               className={`hover:text-[#4fa285] ${opening} cursor-pointer transition-all duration-200`}
             >
               Resume
-            </a>
+            </RouterLink>
           </>
         </div>
       )}

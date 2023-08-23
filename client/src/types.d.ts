@@ -1,4 +1,6 @@
-declare module "locomotive-scroll"; /*  {
+declare module "locomotive-scroll";
+declare module "*.pdf";
+/*  {
   function readFileSync(
     path: string | number,
     options?: { encoding?: string; flag?: string } | null
