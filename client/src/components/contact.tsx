@@ -29,6 +29,7 @@ export const Contact: React.FC = () => {
   });
   // starts at 50% of viewport, ends at 80%
   const formY = useTransform(scrollYspring, [0.1, 0.6], ["80%", "0%"]);
+  const decorationY = useTransform(scrollYspring, [0, 1], ["90%", "-2%"]);
   const writeMeOpacity = useTransform(
     scrollYspring,
     [0.5, 0.9],
@@ -145,10 +146,13 @@ export const Contact: React.FC = () => {
                   </div>
                 </form>
                 <div>
-                  <span className="absolute -top-10 -right-9 z-[-1]">
+                  <motion.span
+                    style={{ y: decorationY }}
+                    className="absolute -top-10 -right-9 z-[-1]"
+                  >
                     <img src={circleG} alt="" className="hidden dark:block" />
                     <img src={circleB} alt="" className="dark:hidden" />
-                  </span>
+                  </motion.span>
                 </div>
               </div>
             </motion.div>

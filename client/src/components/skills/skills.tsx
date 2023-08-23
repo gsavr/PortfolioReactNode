@@ -59,7 +59,7 @@ export const Skills: React.FC<SkillsProps> = ({ skillsRef }) => {
     return skills.map(({ src, alt, title, dark }) => {
       return (
         <div
-          className={`w-"1/3" flex flex-col items-center transition-all duration-500 hover:scale-125`}
+          className={`w-"1/3" flex flex-col items-center transition-all duration-500`}
         >
           <img
             src={src}

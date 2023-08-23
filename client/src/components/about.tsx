@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import photo from "../images/me.jpg";
 import { Skills } from "./skills/skills";
-import { motion } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import {
   animateH1,
   animatePic,
@@ -12,6 +12,13 @@ import {
 
 export const About: React.FC = () => {
   const skillsRef = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: skillsRef,
+    // offset - starts when start of element meets top(start) of viewport - ends when end of element meets top(start) of viewport
+    offset: ["start start", "end start"],
+  });
+
+  const mePicY = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
 
   return (
     <div id="about" ref={skillsRef} className="overflow-x-hidden">
@@ -37,6 +44,7 @@ export const About: React.FC = () => {
             className="mb-10 rounded-full shadow-2xl md:w-fit"
             src={photo}
             alt="Giorgio"
+            style={{ y: mePicY }}
           />
         </div>
 
@@ -55,19 +63,20 @@ export const About: React.FC = () => {
               who i am:
             </h2>
             <p className="text-md md:text-lg">
-              Full-Stack Software Engineer specialized in React.js, JavaScript,
-              Typescript, HTML/CSS, TailwindCSS, Node.js, with an objective to
-              develop websites and applications that are client-driven while
-              ensuring that they are straightforward and engaging for the end
-              user.
+              I'm a web developer specializing in React.js, Next.js, Node.js,
+              and TypeScript. With four years of experience and a certification
+              from the University of Miami Coding Bootcamp, I'm dedicated to
+              crafting engaging websites and apps.
             </p>
             <p className="text-md md:text-lg">
-              I aim to use my design, development and other skills while
-              continuously advancing my skill set through additional programming
-              and career development to remain at the forefront of an
-              ever-changing technology landscape. In my free time, I am
-              continuously learning new technologies and building projects, I
-              also like to read fiction and travel.
+              My portfolio reflects a versatile skill set, from creating an
+              OpenAI blog generator to a peer-to-peer SMS app and Docker
+              containerized solutions. I also have a background in science
+              education, which helps me bring effective communication to
+              collaborations. My goal is to deliver high-quality, user-friendly
+              solutions that fuse technology and creativity. When not coding, I
+              explore fiction and travel for inspiration. Let's connect and
+              bring your digital ideas to life!"
             </p>
           </motion.div>
         </div>
