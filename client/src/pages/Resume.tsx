@@ -14,7 +14,7 @@ export const Resume: React.FC = () => {
             <NavBar />
           </div>
 
-          <div className="gradient-bg container flex h-fit w-fit items-center justify-center overflow-x-auto overflow-y-auto rounded-xl p-0 shadow-2xl">
+          <div className="gradient-bg container flex h-fit w-fit items-center justify-center overflow-x-auto overflow-y-auto rounded-xl p-0 shadow-2xl transition-all duration-700 lg:hover:translate-y-44 lg:hover:scale-150">
             <Document
               className={""}
               file={resume}
