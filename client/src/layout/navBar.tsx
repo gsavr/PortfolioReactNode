@@ -109,9 +109,17 @@ export const NavBar: React.FC<NavBarProps> = (props) => {
         <>
           <RouterLink
             to="/"
-            className="hover:border-b hover:border-[#8bd8bd] md:hidden"
+            className="rounded-full bg-[#648990] p-4 text-sm text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-transparent dark:text-gray-100 dark:hover:bg-gray-700 dark:focus:ring-transparent md:hidden"
           >
-            Back
+            <svg
+              viewBox="0 0 512 512"
+              fill="currentColor"
+              height="1em"
+              width="1em"
+              {...props}
+            >
+              <path d="M321.94 98L158.82 237.78a24 24 0 000 36.44L321.94 414c15.57 13.34 39.62 2.28 39.62-18.22v-279.6c0-20.5-24.05-31.56-39.62-18.18z" />
+            </svg>
           </RouterLink>
         </>
       )}
