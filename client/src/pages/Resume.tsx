@@ -14,7 +14,7 @@ export const Resume: React.FC = () => {
             <NavBar />
           </div>
 
-          <div className="gradient-bg container flex h-fit w-fit items-center justify-center overflow-x-auto overflow-y-auto rounded-xl p-0">
+          <div className="gradient-bg container flex h-fit w-fit items-center justify-center overflow-x-auto overflow-y-auto rounded-xl p-0 shadow-2xl">
             <Document
               className={""}
               file={resume}
@@ -37,7 +37,7 @@ export const Resume: React.FC = () => {
               <Page
                 className={"block md:hidden"}
                 pageNumber={1}
-                width={500}
+                scale={0.65}
                 renderTextLayer={false}
                 renderAnnotationLayer={false}
                 renderMode={"svg"}
