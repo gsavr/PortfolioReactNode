@@ -8,7 +8,7 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/$
 export const Resume: React.FC = () => {
   return (
     <>
-      <div className="gradient-bg min-w-screen min-h-screen">
+      <div className="min-w-screen min-h-screen bg-resume">
         <div className="container mx-auto flex min-h-screen max-w-6xl flex-col items-center justify-start px-6 py-12">
           <div className="w-full px-6 pb-10">
             <NavBar />
