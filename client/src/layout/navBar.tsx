@@ -6,6 +6,12 @@ import { MobileMenu } from "../components/hero/mobileMenu";
 import { Link } from "react-scroll";
 import { Link as RouterLink, useLocation } from "react-router-dom";
 import { links, resumeLink } from "../assets/links";
+import {
+  IconArrowGoBackFill,
+  IconBxDownload,
+  IconFileDownload,
+} from "../components/svg-icons";
+import resume from "../assets/resume.pdf";
 
 interface NavBarProps {
   open?: string | undefined;
@@ -86,9 +92,23 @@ export const NavBar: React.FC<NavBarProps> = (props) => {
             </div>
           </>
         ) : (
-          <RouterLink to="/" className="hover:border-b hover:border-[#8bd8bd] ">
-            Back
-          </RouterLink>
+          /* Back button and DL on PDF page on desktop */ <>
+            <RouterLink
+              to="/"
+              className="flex items-center justify-center gap-1 hover:border-b hover:border-[#8bd8bd] "
+            >
+              Return <IconArrowGoBackFill className="text-2xl" />
+            </RouterLink>
+            <a
+              href={resume}
+              download="Giorgio Savron Resume"
+              target="_blank"
+              rel="noreferrer"
+              className="flex items-center justify-center gap-1 hover:border-b hover:border-[#8bd8bd]"
+            >
+              Download <IconBxDownload className="text-2xl" />
+            </a>
+          </>
         )}
         {/* Position for toggle theme buttton in mobile is located in hamburger button */}
         <div className="group">
@@ -107,19 +127,21 @@ export const NavBar: React.FC<NavBarProps> = (props) => {
         </>
       ) : (
         <>
+          {/* Back button and DL button on PDF page mobile */}
+          <a
+            href={resume}
+            download="Giorgio Savron Resume"
+            target="_blank"
+            rel="noreferrer"
+            className="flex items-center justify-center gap-1 hover:border-b hover:border-[#8bd8bd] md:hidden"
+          >
+            <IconFileDownload className="text-4xl" />
+          </a>
           <RouterLink
             to="/"
-            className="rounded-full bg-[#648990]/50 p-4 text-lg text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-transparent dark:text-gray-100 dark:hover:bg-gray-700 dark:focus:ring-transparent md:hidden"
+            className="rounded-full bg-[#648990]/50 p-3 text-lg text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-transparent dark:text-gray-100 dark:hover:bg-gray-700 dark:focus:ring-transparent md:hidden"
           >
-            <svg
-              viewBox="0 0 512 512"
-              fill="currentColor"
-              height="1em"
-              width="1em"
-              {...props}
-            >
-              <path d="M321.94 98L158.82 237.78a24 24 0 000 36.44L321.94 414c15.57 13.34 39.62 2.28 39.62-18.22v-279.6c0-20.5-24.05-31.56-39.62-18.18z" />
-            </svg>
+            <IconArrowGoBackFill className="text-2xl" />
           </RouterLink>
         </>
       )}
