@@ -11,7 +11,7 @@ export const animatePic = {
     scale: 1,
     y: 0,
     opacity: 1,
-    transition: { type: "spring", duration: 2, bounce: 0.3 },
+    transition: { type: "spring", duration: 0.8, bounce: 0.3 },
   },
 };
 
