@@ -66,7 +66,7 @@ export const Hero: React.FC = () => {
                 <Link to="about" className="cursor-pointer">
                   <div
                     className={`hero-box transition-all duration-2000
-                  hover:scale-105 md:hover:scale-125`}
+                  hover:scale-105 md:hover:scale-110`}
                   >
                     <p className="pb-3 text-2xl md:pb-6 md:text-5xl lg:pb-7">
                       Welcome {"</>"}

@@ -7,12 +7,12 @@
 }
 
 .gradient-bg {
-  @apply top-0 bottom-0 right-0 left-0 bg-gradient-to-r from-[#63686A]/60 to-[#506E73]/70 dark:from-gray-600/70 dark:to-gray-800/80;
+  @apply top-0 bottom-0 right-0 left-0 bg-gray-500/50 dark:from-gray-900/70 dark:to-gray-800/80;
 }
 /*OLD COLOR: to-gray-500 */
 
 .hero-box {
-  @apply -mt-20 max-w-2xl rounded border-2 bg-[#E0ECEF]/40 p-4 text-3xl uppercase text-primary transition-all duration-1000 hover:text-slate-400 dark:bg-transparent dark:hover:text-slate-500 md:m-16 md:mx-0 md:p-10 md:text-5xl md:leading-normal;
+  @apply -mt-20 max-w-2xl rounded border-2 bg-[#E0ECEF]/50 p-4 text-3xl uppercase text-primary shadow-2xl transition-all duration-1000 hover:text-slate-400 dark:bg-transparent dark:hover:text-slate-500 md:m-16 md:mx-0 md:p-10 md:text-5xl md:leading-normal;
 }
 
 .hero-enter-button {
