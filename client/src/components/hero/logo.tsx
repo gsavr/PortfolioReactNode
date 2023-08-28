@@ -1,5 +1,5 @@
-import logo_light from "../../images/GS_Logo_light.png";
-import logo_dark from "../../images/GS_Logo_dark.png";
+import logo_light from "../../images/GS_Logo_light.webp";
+import logo_dark from "../../images/GS_Logo_dark.webp";
 import { motion } from "framer-motion";
 
 export const Logo = () => {

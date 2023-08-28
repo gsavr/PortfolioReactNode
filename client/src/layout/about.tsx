@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import photo from "../images/me.jpg";
+import photo from "../images/me.webp";
 import { Skills } from "./skills";
 import { motion, useScroll, useTransform } from "framer-motion";
 import {
