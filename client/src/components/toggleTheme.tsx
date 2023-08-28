@@ -10,7 +10,6 @@ export const ToggleTheme = () => {
     <div>
       {isDark ? (
         <button
-          id="dark-mode-button"
           aria-label="switch to light mode"
           onClick={changeTheme}
           className="rounded-full bg-gray-500 p-3 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-transparent dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-transparent md:p-2.5"
@@ -27,7 +26,6 @@ export const ToggleTheme = () => {
         </button>
       ) : (
         <button
-          id="light-mode-button"
           aria-label="switch to dark mode"
           onClick={changeTheme}
           className="rounded-full bg-[#9AF7E8]/70 p-3 text-sm text-gray-700 hover:bg-gray-100 focus:outline-none focus:ring-transparent dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-transparent md:p-2.5"

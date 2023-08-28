@@ -31,17 +31,15 @@ export const About: React.FC = () => {
       >
         About me
       </motion.h1>
-      <div className="container mx-auto flex flex-col items-center px-6 pb-6 md:flex-row md:space-x-16">
+      <div className="container mx-auto flex flex-col items-center px-6 pb-6 transition-all duration-1000 md:flex-row md:space-x-16">
         {/*  Image  */}
-        <div
-          className={`w-2/3 rounded-full transition-all duration-1000 md:w-1/4`}
-        >
+        <div className={`w-2/3 rounded-full  md:w-1/4`}>
           <motion.img
             initial={"offscreen"}
             whileInView={"onscreen"}
             viewport={{ once: true, amount: 0.8 }}
             variants={animatePic}
-            className="mb-10 rounded-full shadow-2xl md:w-fit"
+            className="mb-10 rounded-full shadow-2xl  md:w-fit"
             src={photo}
             alt="Giorgio"
             style={{ y: mePicY }}

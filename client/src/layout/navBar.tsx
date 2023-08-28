@@ -26,7 +26,6 @@ export const NavBar: React.FC<NavBarProps> = (props) => {
 
   //see which page to render links conditionally
   const p = useLocation();
-  //console.log(p.pathname);
 
   useEffect(() => {
     if (p.pathname === "/") setAtHome(true);
@@ -80,12 +79,7 @@ export const NavBar: React.FC<NavBarProps> = (props) => {
           <>
             {renderLinks()}
             <div className="group">
-              <RouterLink
-                to={resumeLink.link}
-                // target="_blank"
-                // rel="noreferrer"
-                className="group"
-              >
+              <RouterLink to={resumeLink.link} className="group">
                 Resume
               </RouterLink>
               <div className="mx-2 transition duration-300 group-hover:border-b group-hover:border-[#8bd8bd]"></div>
@@ -111,7 +105,7 @@ export const NavBar: React.FC<NavBarProps> = (props) => {
           </>
         )}
         {/* Position for toggle theme buttton in mobile is located in hamburger button */}
-        <div className="group">
+        <div className="group hidden md:block">
           <ToggleTheme />
         </div>
       </div>

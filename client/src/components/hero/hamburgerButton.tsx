@@ -21,7 +21,7 @@ export const HamburgerButton: React.FC<HamburgerButtonProps> = (props) => {
         <span className="hamburger-bottom bg-black dark:bg-white"></span>
       </button>
       {/* mobile dark theme toggle */}
-      <div className="pt-0 pr-0">
+      <div className="block pt-0 pr-0 md:hidden">
         <ToggleTheme />
       </div>
     </div>

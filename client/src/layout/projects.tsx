@@ -54,7 +54,7 @@ export const Projects: React.FC = () => {
           <div className="item-gradient"></div>
           {/*  Image text  */}
           <div className="project-image-text ">
-            <h5 className="uppercase">{title}</h5>
+            <p className="uppercase">{title}</p>
             <p className="project-image-description ">{desc}</p>
           </div>
         </motion.a>
