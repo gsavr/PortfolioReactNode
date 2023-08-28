@@ -46,7 +46,7 @@ export const Projects: React.FC = () => {
           <img
             className="hidden w-full duration-200 group-hover:scale-110 md:block"
             src={srcDesk}
-            alt={title}
+            alt={"project screenshot"}
           />
           {/*  Mobile Image  */}
           <img className="w-full md:hidden" src={srcMobile} alt={title} />
