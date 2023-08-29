@@ -21,6 +21,11 @@ html {
   --color-text-accent: #2b6cb0;
 }
 
+@font-face {
+  font-family: Raleway;
+  src: url("../assets/fonts/Raleway.ttf") format("truetype");
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
