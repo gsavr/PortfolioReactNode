@@ -26,6 +26,12 @@ html {
   src: url("../assets/fonts/Raleway.ttf") format("truetype");
 }
 
+@media only screen and (max-device-width: 1180px) {
+  .nav-text {
+    transform: scale(1, 1);
+  }
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

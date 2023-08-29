@@ -67,7 +67,7 @@ export const NavBar: React.FC<NavBarProps> = (props) => {
   };
 
   return (
-    <nav className="flex items-center justify-between rounded-full bg-[#E0ECEF]/80 font-bold text-black transition-all duration-1500 dark:bg-[#63686A]/80 dark:text-primary">
+    <nav className=" flex items-center justify-between rounded-full bg-[#E0ECEF]/80 font-[600] text-black transition-all duration-1500 dark:bg-[#63686A]/80 dark:text-primary">
       {/* Logo  */}
       <RouterLink to="/">
         <Logo />
