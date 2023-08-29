@@ -23,8 +23,8 @@ module.exports = {
         2000: "2000ms",
       },
       backgroundImage: {
-        giodesk: "url(/public/gio1.webp)",
-        giofront: "url(/public/gio2.webp)",
+        giodesk: "url(https://d3p0c9cfxsa3zu.cloudfront.net/gio1.webp)",
+        giofront: "url(https://d3p0c9cfxsa3zu.cloudfront.net/gio2.webp)",
       },
       backgroundSize: {
         auto: "auto",
