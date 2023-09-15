@@ -14,7 +14,7 @@ html {
 
 .light {
   --color-bg-primary: #ffffff;
-  --color-bg-secondary: #edf6f7; /* old color edf2f7 */
+  --color-bg-secondary: #edf2f7;
   --color-bg-resume: #c8cfd0;
   --color-text-primary: #2d3748;
   --color-text-secondary: #4a5568;

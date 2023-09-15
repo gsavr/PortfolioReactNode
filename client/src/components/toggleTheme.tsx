@@ -28,7 +28,7 @@ export const ToggleTheme = () => {
         <button
           aria-label="switch to dark mode"
           onClick={changeTheme}
-          className="rounded-full bg-[#9AF7E8]/70 p-3 text-sm text-gray-700 hover:bg-gray-100 focus:outline-none focus:ring-transparent dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-transparent md:p-2.5"
+          className="rounded-full bg-[#ebeced]/70 p-3 text-sm text-gray-700 hover:bg-gray-100 focus:outline-none focus:ring-transparent dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-transparent md:p-2.5"
         >
           {/* old for light-mode-button bg-gray-400 text-gray-500 */}
           <svg

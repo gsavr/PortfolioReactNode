@@ -5,7 +5,7 @@ import { Link } from "react-scroll";
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="bg-[#122429] text-white dark:bg-[#252c38]">
+    <footer className="bg-[#252c38] text-white dark:bg-[#252c38]">
       <div className="container relative mx-auto px-5 md:pb-10 md:pt-12">
         {/* UP arrows at top of footer */}
         <Link to="hero" className="up-button cursor-pointer">

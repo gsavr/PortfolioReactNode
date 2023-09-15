@@ -131,7 +131,7 @@ export const Contact: React.FC = () => {
                     <button
                       type="submit"
                       className={`form-button  ${
-                        sending ? "bg-[#8bd8bd] shadow-2xl" : "bg-[#638A90]"
+                        sending ? "bg-[#8bd8bd] shadow-2xl" : "bg-[#3c77b9]"
                       }`}
                     >
                       {/* old color button bg-[#243665] */}
